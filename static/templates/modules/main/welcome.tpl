@@ -4,3 +4,5 @@
 <div class="text">
     Оно работает!
 </div>
+
+{$test}

@@ -5,6 +5,8 @@
        private $_SETTINGS;
        private $Render;
        private $Router;
+       private $Controller;
+       private $ConrollerName;
        private $Start_time;
 
        public function __construct(){
@@ -19,10 +21,8 @@
        private function Init(){
             $this->LoadSettings();
             $this->Router = $this->InitRouterSystem();
-
-            $this->Render->view = $this->InitRenderingSystem();
-
-            $this->InitController($this->Render->view);
+            $this->Render = $this->InitRenderingSystem();
+            $this->InitController($this->Render);
        }
 
        private function LoadSettings(){
@@ -48,12 +48,24 @@
        }
 
        private function InitController($View){
+           $this->IncludeController();
+           $this->CreateControllerObject($View);
+           $this->CallControllerFunction();
+       }
+
+       private function IncludeController(){
            require_once('Prototypes/Controller.php');
            require_once('Modules/'.$this->Router->Module.'/'.$this->Router->Controller.'Controller.php');
-           $ConrollerName = $this->Router->Controller.'Controller';
-           $Controller = new $ConrollerName($View);
+       }
+
+       private function CreateControllerObject($View){
+           $this->ConrollerName = $this->Router->Controller.'Controller';
+           $this->Controller = new $this->ConrollerName($View);
+       }
+
+       private function CallControllerFunction(){
            $ActionName = $this->Router->Action;
-           $Controller->$ActionName();
+           $this->Controller->$ActionName();
        }
 
        private function StartCalculate(){
@@ -67,8 +79,19 @@
            $end_array = explode(" ",$end_time);
            $end_time = $end_array[1] + $end_array[0];
            $time = $end_time - $this->Start_time;
-           printf("Страница сгенерирована за %f секунд",$time);
+           $usedMemory = $this->convert(memory_get_usage(true));
+           printf("<div class='debug_generation_time'>Страница сгенерирована за %f секунд.<br/> Использовано {$usedMemory}</div>",$time);
+
        }
+
+       function convert($size)
+       {
+           $unit=array('b','kb','mb','gb','tb','pb');
+           return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
+       }
+
+    //
+
 
 
    }
