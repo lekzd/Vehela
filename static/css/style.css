@@ -106,3 +106,13 @@ textarea { overflow:auto; }
 .footer-nav ul { list-style: none; }
 .footer-nav ul li { display: inline; border-right: 1px solid #7f7f7f; padding: 0 6px 0 0; margin: 0 7px 0 0; }
 .footer-nav ul li.last { border:0; padding:0; margin:0; }
+
+.debug_generation_time {
+    padding: 2px;
+    border-radius:1px;
+    text-align: center;
+    background: #000;
+    color:#fff;
+    font-family: "Tahoma";
+    font-size:11px;
+}
