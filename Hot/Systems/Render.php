@@ -33,12 +33,12 @@
         }
 
         public function getLayout() {
-            return $this->getTplFile("/../../static/templates/modules/main/layout");
+            return $this->getTplFile("/../../static/templates/default/layout");
         }
 
         public function getTemplate() {
             $this->IsRequestForMainPage();
-            return $this->getTplFile("/../../static/templates/modules/{$this->Module}/{$this->Controller}");
+            return $this->getTplFile("/../../static/templates/default/modules/{$this->Module}/{$this->Controller}");
         }
 
         private function getTplFile($location){

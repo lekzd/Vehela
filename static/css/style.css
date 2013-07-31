@@ -22,7 +22,6 @@ textarea { overflow:auto; }
 .left, .alignleft { float: left; display: inline; }
 .right, .alignright { float: right; display: inline; }
 
-
 .shell { width: 980px; margin: 0 auto; }
 .border { background: #fff; position: relative; }
 .shadow-l { background: url(images/shadow-l.png) no-repeat 0 0; width: 25px; height: 686px; position: absolute; top:0;left:-25px; }
@@ -41,12 +40,12 @@ textarea { overflow:auto; }
 .socials ul li a.fb { background: url(images/soc-fb.gif) no-repeat 0 0; }
 .socials ul li a.twit { background: url(images/soc-twit.gif) no-repeat 0 0; }
 
-#navigation { height: 43px; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; }
+#navigation { height: 43px; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
 #navigation ul { list-style: none; }
-#navigation ul li { float: left; height: 43px; border-right: 1px solid #dbdbdb; font-size: 12px; line-height: 43px; font-weight: bold; text-transform: uppercase; }
+#navigation ul li { float: left; height: 43px; border-right: 1px solid #ebebeb; font-family:"Tahoma"; font-size: 12px; line-height: 43px;}
 #navigation ul li a { float: left; height: 43px; color: #000; padding: 0 33px; }
 #navigation ul li a:hover, 
-#navigation ul li a.active { color: #ff0000; text-decoration: none; }
+#navigation ul li a.active { color: #ff0000; text-decoration: none; background: #F8F8F8;border-bottom: 1px solid #8B8B8B;}
 
 .slider { width: 930px; height: 300px; border: 1px solid #dbdbdb; position: relative; margin: 25px 0 0 24px; }
 .slider .item { position: relative; width: 928px; height: 298px; }
@@ -59,7 +58,7 @@ textarea { overflow:auto; }
 .slider-nav a { width: 18px; height: 18px; background: #d7d7d8; margin: 0 5px 0 0; }
 .slider-nav a.active { background: #39393d; }
 
-#main { width: 932px; padding: 37px 24px 17px 24px; }
+#main { padding: 37px 24px 17px 24px; }
 #main h3 { font-size: 12px; line-height: 15px; color: #000; text-transform: uppercase; border-bottom: 1px solid #dbdbdb; padding: 0 0 9px 0; }
 #main a.more { background: url(images/more.gif) no-repeat 0 3px; font-size: 11px; line-height: 14px; color: #ff0000; text-decoration: underline; padding: 0 0 0 13px; }
 #main a.more:hover { text-decoration: none; }
