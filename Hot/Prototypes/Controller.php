@@ -3,14 +3,24 @@
     Abstract Class Controller {
 
         protected $View;
+        protected $DBConnection;
 
-        public function __construct($View){
+        public function __construct($DBConnection,$View){
+
+            $this->DBConnection = &$DBConnection;
+            if (method_exists ($this,'beforeInit'))
+                $this->beforeInit();
+
             $this->View = $View;
             $this->Init();
         }
 
         public function __destruct(){
-            $this->Render();
+
+            if (method_exists ($this,'beforeDestruct'))
+                $this->beforeDestruct();
+
+             $this->Render();
         }
 
         public function Init(){
@@ -28,6 +38,12 @@
 
         public function MakeStampInLayout($VariableName, $Value){
             $this->View->Layout = str_replace('{$'.$VariableName.'}',$Value,$this->View->Layout);
+        }
+
+        public function beforeInit(){
+        }
+
+        public function beforeDestruct(){
         }
 
     }

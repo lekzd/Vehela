@@ -8,6 +8,7 @@
        private $Controller;
        private $ConrollerName;
        private $Start_time;
+       private $DBConnection;
 
        public function __construct(){
             $this->StartCalculate();
@@ -23,7 +24,7 @@
             $this->LoadCoreClasses();
             $this->Router = $this->InitRouterSystem();
             $this->Render = $this->InitRenderingSystem();
-            $DB = new DataBase($this->_SETTINGS['DataBase']);
+            $this->DBConnection = new DataBase($this->_SETTINGS['DataBase']);
             $this->InitController($this->Render);
        }
 
@@ -67,7 +68,7 @@
 
        private function CreateControllerObject($View){
            $this->ConrollerName = $this->Router->Controller.'Controller';
-           $this->Controller = new $this->ConrollerName($View);
+           $this->Controller = new $this->ConrollerName($this->DBConnection,$View);
        }
 
        private function CallControllerFunction(){

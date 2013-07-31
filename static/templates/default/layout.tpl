@@ -39,6 +39,8 @@
             <div class="cl">&nbsp;</div>
         </div>
 
+
+
         <!--
 
                 <div class="slider">
@@ -93,8 +95,9 @@
 
         <div id="main">
             <div id="content" class="left">
+
                 <div class="highlight">
-                    <h3>{$PageName}</h3>
+                    <h3><span class="label label-info">{$PageName}</span></h3>
                     <p>{$Content}</p>
                     <a href="#" class="more">Find out more</a>
                 </div>
