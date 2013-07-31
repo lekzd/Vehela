@@ -8,7 +8,8 @@
 
         public function Hello(){
             $this->MakeStampInView('test','hello');
-            $this->MakeStampInLayout('Title','hello');
+            $this->MakeStampInLayout('Title','Главная');
+            $this->MakeStampInLayout('PageName','Главная страница');
         }
 
     }

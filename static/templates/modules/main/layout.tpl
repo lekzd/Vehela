@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
 <head>
-    <title>{$Title}</title>
+    <title>Vehela - {$Title}</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css" media="all" />
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="/static/css/jquery.jcarousel.css" type="text/css" media="all" />
     <!--[if IE 6]>
@@ -31,14 +32,16 @@
         <div id="navigation">
             <ul>
                 <li><a href="/index.php" class="active">Главная</a></li>
-                <li><a href="/index.php?module=main&controller=about&action">О проекте</a></li>
+                <li><a href="/index.php?module=main&controller=about&action=show">О проекте</a></li>
                 <li><a href="#">Сервисы</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
             <div class="cl">&nbsp;</div>
         </div>
 
-        <div class="slider">
+        <!--
+
+                <div class="slider">
             <div class="slider-nav">
                 <a href="#" class="left notext">1</a>
                 <a href="#" class="left notext">2</a>
@@ -86,65 +89,17 @@
             </ul>
         </div>
 
+        -->
+
         <div id="main">
             <div id="content" class="left">
                 <div class="highlight">
-                    <h3>Welcome Note</h3>
-                    <img src="/static/css/images/highlight.gif" alt="" class="right" />
+                    <h3>{$PageName}</h3>
                     <p>{$Content}</p>
                     <a href="#" class="more">Find out more</a>
                 </div>
 
-                <div class="projects">
-                    <h3>Latest projects</h3>
-                    <div class="item">
-                        <div class="image left">
-                            <a href="#"><img src="/static/css/images/project01.jpg" alt="" /></a>
-                        </div>
-                        <div class="text left">
-                            <h4>simply dummy title</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is</p>
-                            <a href="#" class="more">Find out more</a>
-                        </div>
-                        <div class="cl">&nbsp;</div>
-                    </div>
-                    <!--next-->
-                    <div class="item">
-                        <div class="image left">
-                            <a href="#"><img src="/static/css/images/project02.jpg" alt="" /></a>
-                        </div>
-                        <div class="text left">
-                            <h4>simply dummy title</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is</p>
-                            <a href="#" class="more">Find out more</a>
-                        </div>
-                        <div class="cl">&nbsp;</div>
-                    </div>
-                    <!--next-->
-                    <div class="item">
-                        <div class="image left">
-                            <a href="#"><img src="/static/css/images/project03.jpg" alt="" /></a>
-                        </div>
-                        <div class="text left">
-                            <h4>simply dummy title</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is</p>
-                            <a href="#" class="more">Find out more</a>
-                        </div>
-                        <div class="cl">&nbsp;</div>
-                    </div>
-                    <!--next-->
-                    <div class="item">
-                        <div class="image left">
-                            <a href="#"><img src="/static/css/images/project04.jpg" alt="" /></a>
-                        </div>
-                        <div class="text left">
-                            <h4>simply dummy title</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is</p>
-                            <a href="#" class="more">Find out more</a>
-                        </div>
-                        <div class="cl">&nbsp;</div>
-                    </div>
-                </div>
+
             </div>
             <div id="sidebar" class="right">
                 <h3>Some Links</h3>

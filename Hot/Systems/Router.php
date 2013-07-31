@@ -67,7 +67,7 @@
         }
 
         private function IsEmptyRequest(){
-            if(empty($_GET['Module']) && empty($_GET['Subj']))
+            if(empty($_GET['module']) && empty($_GET['controller']) && empty ($_GET['action']))
                 return 1;
         }
 

@@ -24,7 +24,7 @@ textarea { overflow:auto; }
 
 
 .shell { width: 980px; margin: 0 auto; }
-.border { border: 1px solid #e8e8e8; background: #fff; position: relative; }
+.border { background: #fff; position: relative; }
 .shadow-l { background: url(images/shadow-l.png) no-repeat 0 0; width: 25px; height: 686px; position: absolute; top:0;left:-25px; }
 .shadow-r { background: url(images/shadow-r.png) no-repeat 0 0; width: 25px; height: 686px; position: absolute; top:0;right:-25px; }
 .shadow-b { background: url(images/shadow-b.png) no-repeat 0 0; width: 980px; height: 20px; position: absolute; bottom:-20;left:0; }
@@ -109,10 +109,25 @@ textarea { overflow:auto; }
 
 .debug_generation_time {
     padding: 2px;
+    margin-bottom: 25px;
     border-radius:1px;
     text-align: center;
-    background: #000;
-    color:#fff;
+    background: #ffffff;
+    border:1px solid #000;
+    color:#000;
     font-family: "Tahoma";
     font-size:11px;
+
+}
+
+.headTitle {
+    border-bottom:1px solid #000;
+    padding-bottom: 7px;
+}
+
+.Content{
+    background: #fafafa;
+    border:1px solid #cacaca;
+    padding: 5px;
+    border-radius:4px;
 }

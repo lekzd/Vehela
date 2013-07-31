@@ -20,8 +20,10 @@
 
        private function Init(){
             $this->LoadSettings();
+            $this->LoadCoreClasses();
             $this->Router = $this->InitRouterSystem();
             $this->Render = $this->InitRenderingSystem();
+            $DB = new DataBase($this->_SETTINGS['DataBase']);
             $this->InitController($this->Render);
        }
 
@@ -35,6 +37,11 @@
                $this->_SETTINGS["$key"] = $value;
            }
 
+       }
+
+       private function LoadCoreClasses(){
+           require_once('Prototypes/DataBase.php');
+           require_once('Prototypes/Model.php');
        }
 
        private function InitRouterSystem(){
@@ -55,7 +62,7 @@
 
        private function IncludeController(){
            require_once('Prototypes/Controller.php');
-           require_once('Modules/'.$this->Router->Module.'/'.$this->Router->Controller.'Controller.php');
+           require_once('Modules/'.ucfirst($this->Router->Module).'/'.ucfirst($this->Router->Controller).'Controller.php');
        }
 
        private function CreateControllerObject($View){
@@ -89,8 +96,6 @@
            $unit=array('b','kb','mb','gb','tb','pb');
            return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
        }
-
-    //
 
 
 
