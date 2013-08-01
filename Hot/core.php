@@ -6,8 +6,8 @@
        private $Render;
        private $Router;
        private $Controller;
-       private $ConrollerName;
-       private $Start_time;
+       private $ControllerName;
+       private $start_time;
        private $DBConnection;
 
        public function __construct(){
@@ -29,15 +29,13 @@
        }
 
        private function LoadSettings(){
-
            $_SETTINGS = array();
 
            require_once('settings.php');
 
            foreach($_SETTINGS as $key=>$value){
-               $this->_SETTINGS["$key"] = $value;
+               $this->_SETTINGS[$key] = $value;
            }
-
        }
 
        private function LoadCoreClasses(){
@@ -67,8 +65,8 @@
        }
 
        private function CreateControllerObject($View){
-           $this->ConrollerName = $this->Router->Controller.'Controller';
-           $this->Controller = new $this->ConrollerName($this->DBConnection,$View);
+           $this->ControllerName = $this->Router->Controller.'Controller';
+           $this->Controller = new $this->ControllerName($this->DBConnection,$View);
        }
 
        private function CallControllerFunction(){
@@ -77,25 +75,19 @@
        }
 
        private function StartCalculate(){
-           $start_time = microtime();
-           $start_array = explode(" ",$start_time);
-           $this->Start_time = $start_array[1] + $start_array[0];
+           $this->start_time = microtime(true);
        }
 
        private function EndCalculate(){
-           $end_time = microtime();
-           $end_array = explode(" ",$end_time);
-           $end_time = $end_array[1] + $end_array[0];
-           $time = $end_time - $this->Start_time;
-           $usedMemory = $this->convert(memory_get_usage(true));
-           printf("<div class='debug_generation_time'>Страница сгенерирована за %f секунд.<br/> Использовано {$usedMemory}</div>",$time);
+           $time = microtime(true) - $this->start_time;
+           printf("<div class='debug_generation_time'>Страница сгенерирована за %f секунд.<br/> Использовано %s</div>",$time, $this->convert(memory_get_usage(true)));
 
        }
 
-       function convert($size)
+       private function convert($size)
        {
-           $unit=array('b','kb','mb','gb','tb','pb');
-           return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
+           $unit = array('b', 'kb', 'mb', 'gb', 'tb', 'pb');
+           return @round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
        }
 
 
