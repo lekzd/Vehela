@@ -1,11 +1,13 @@
 <?php
 
-$_SETTINGS['debug'] = 1;
-$_SETTINGS['version'] = '0.02A';
-
-$_SETTINGS['DataBase']['host'] = '178.32.53.111';
-$_SETTINGS['DataBase']['user'] = 'Vilay_VehelaUser';
-$_SETTINGS['DataBase']['password'] = '12345678';
-$_SETTINGS['DataBase']['db'] = 'Vilay_Vehela';
+$_SETTINGS = [
+    'debug' => 1,
+    'version' => '0.02A',
+    'DataBase' => [
+        'dsn' => 'mysql:host=178.32.53.111;dbname=Vilay_Vehela',
+        'user' => 'Vilay_VehelaUser',
+        'password' => '12345678'
+    ]
+];
 
 ?>

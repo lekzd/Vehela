@@ -1,3 +1,5 @@
 # NetBeans
 /nbproject
-.idea
+
+# PhpStorm
+/.idea
