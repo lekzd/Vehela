@@ -1,6 +1,6 @@
 <?php
 
-require_once('Hot/core.php');
-new Core();
+require_once('hot/Vehela.php');
+new Vehela();
 
 ?>

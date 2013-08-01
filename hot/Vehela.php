@@ -1,6 +1,6 @@
 <?php
 
-class Core
+class Vehela
 {
 
     private $_SETTINGS;
@@ -36,7 +36,7 @@ class Core
     {
         $_SETTINGS = array();
 
-        require_once('settings.php');
+        require_once('Settings.php');
 
         foreach ($_SETTINGS as $key => $value) {
             $this->_SETTINGS[$key] = $value;
@@ -45,19 +45,19 @@ class Core
 
     private function LoadCoreClasses()
     {
-        require_once('Prototypes/DataBase.php');
-        require_once('Prototypes/Model.php');
+        require_once('prototypes/DataBase.php');
+        require_once('prototypes/Model.php');
     }
 
     private function InitRouterSystem()
     {
-        require_once('Systems/Router.php');
+        require_once('systems/Router.php');
         return new Router();
     }
 
     private function InitRenderingSystem()
     {
-        require_once('Systems/Render.php');
+        require_once('systems/Render.php');
         return new Render($this->Router->Module, $this->Router->Controller, $this->Router->Action);
     }
 
@@ -70,7 +70,7 @@ class Core
 
     private function IncludeController()
     {
-        require_once('Prototypes/Controller.php');
+        require_once('prototypes/Controller.php');
         require_once('Modules/' . ucfirst($this->Router->Module) . '/' . ucfirst($this->Router->Controller) . 'Controller.php');
     }
 

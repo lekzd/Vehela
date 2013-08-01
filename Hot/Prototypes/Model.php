@@ -1,6 +1,6 @@
 <?php
 
-require_once('DataBase/CRUD.php');
+require_once('database/CRUD.php');
 
 abstract class Model extends CRUD
 {
