@@ -1,7 +1,6 @@
 <?php
 
-    require_once('Hot/core.php');
-
-    $core = new Core;
+require_once('Hot/core.php');
+new Core();
 
 ?>
