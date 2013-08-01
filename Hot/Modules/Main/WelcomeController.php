@@ -13,6 +13,9 @@ class WelcomeController extends Controller
         $this->MakeStampInView('test', 'hello');
         $this->MakeStampInLayout('Title', 'Главная');
         $this->MakeStampInLayout('PageName', 'Главная страница');
+
+        $User = Vehela::Model('Users');
+
     }
 
 }

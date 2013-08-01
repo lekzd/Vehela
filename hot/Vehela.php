@@ -10,6 +10,7 @@ class Vehela
     private $ControllerName;
     private $start_time;
     private $DBConnection;
+    const RootDir = __DIR__;
 
     public function __construct()
     {
@@ -25,10 +26,11 @@ class Vehela
     private function Init()
     {
         $this->LoadSettings();
+        //$this->LoadDataBaseClasses();
         $this->LoadCoreClasses();
         $this->Router = $this->InitRouterSystem();
         $this->Render = $this->InitRenderingSystem();
-        $this->DBConnection = new DataBase($this->_SETTINGS['DataBase']);
+        //$this->DBConnection = new DataBase($this->_SETTINGS['DataBase']);
         $this->InitController($this->Render);
     }
 
@@ -44,6 +46,11 @@ class Vehela
     }
 
     private function LoadCoreClasses()
+    {
+        require_once('systems/Tools.php');
+    }
+
+    private function LoadDataBaseClasses()
     {
         require_once('prototypes/DataBase.php');
         require_once('prototypes/Model.php');
@@ -102,6 +109,21 @@ class Vehela
         $unit = array('b', 'kb', 'mb', 'gb', 'tb', 'pb');
         return @round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
     }
+
+    public static function Model($ModelName){
+
+        if(!Tools::checkForIncluded("Model"))
+            Tools::includeFile(Vehela::RootDir."/prototypes/Model.php");
+
+        if(!Tools::checkForIncluded($ModelName))
+            Tools::includeFile(Vehela::RootDir."/models/{$ModelName}.php");
+
+        $Model = new $ModelName('oups');
+
+        return $Model;
+    }
+
+
 
 }
 

@@ -5,8 +5,13 @@
     <ignored path="Vilay.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.dummy" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375372983433" ignored="false" />
-    <file path="/Vehela.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375373090436" ignored="false" />
+    <file path="/Vehela.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375385751533" ignored="false" />
     <file path="/main.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375373093515" ignored="false" />
+    <file path="/WelcomeController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375385504390" ignored="false" />
+    <file path="/Users.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375374322774" ignored="false" />
+    <file path="/Controller.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375376209833" ignored="false" />
+    <file path="/Tools.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375385187951" ignored="false" />
+    <file path="/.gitignore" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375385840821" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +30,78 @@
     <favorites_list name="Vilay" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Vehela.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="37" selection-start="3248" selection-end="3248" vertical-scroll-proportion="-13.346154">
+              <folding>
+                <element signature="n#LoadSettings#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#LoadCoreClasses#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#InitRouterSystem#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#InitRenderingSystem#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#InitController#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#IncludeController#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#CallControllerFunction#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#StartCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#EndCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#convert#0;n#Vehela#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="5" selection-start="27" selection-end="27" vertical-scroll-proportion="0.060714286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tools.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/systems/Tools.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="-6.5384617">
+              <folding>
+                <element signature="n#getIncludedFiles#0;n#Tools#0;n#!!top" expanded="false" />
+                <element signature="n#checkForIncluded#0;n#Tools#0;n#!!top" expanded="false" />
+                <element signature="n#getFileNameFromFilePath#0;n#Tools#0;n#!!top" expanded="false" />
+                <element signature="n#getFileExtensionFromFilePath#0;n#Tools#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WelcomeController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/modules/main/WelcomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="-11.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/models/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="12" selection-start="19" selection-end="32" vertical-scroll-proportion="-1.3076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/prototypes/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="5" selection-start="1255" selection-end="1255" vertical-scroll-proportion="-14.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -35,11 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Hot/Modules/Main/AboutController.php" />
-        <option value="$PROJECT_DIR$/static/templates/modules/main/about.tpl" />
-        <option value="$PROJECT_DIR$/static/templates/modules/main/layout.tpl" />
-        <option value="$PROJECT_DIR$/static/templates/modules/main/welcome.tpl" />
-        <option value="$PROJECT_DIR$/Hot/Systems/Render.php" />
         <option value="$PROJECT_DIR$/static/templates/default/layout.tpl" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/Hot/Prototypes/DataBase/CRUD.php" />
@@ -49,8 +120,13 @@
         <option value="$PROJECT_DIR$/Hot/Models/Users.php" />
         <option value="$PROJECT_DIR$/Hot/Modules/Main/RegisterController.php" />
         <option value="$PROJECT_DIR$/main.php" />
-        <option value="$PROJECT_DIR$/hot/Vehela.php" />
         <option value="$PROJECT_DIR$/hot/Settings.php" />
+        <option value="$PROJECT_DIR$/hot/prototypes/Controller.php" />
+        <option value="$PROJECT_DIR$/hot/systems/Tools.php" />
+        <option value="$PROJECT_DIR$/hot/modules/main/WelcomeController.php" />
+        <option value="$PROJECT_DIR$/hot/models/Users.php" />
+        <option value="$PROJECT_DIR$/hot/Vehela.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -179,11 +255,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="prototypes" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,11 +277,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,17 +375,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26060605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26060605" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -387,72 +459,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/main/welcome.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/DataBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="427" selection-end="427" vertical-scroll-proportion="0.7030075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/systems/Render.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="70" selection-start="1205" selection-end="1205" vertical-scroll-proportion="-14.384615">
-          <folding>
-            <element signature="n#IsRequestForMainPage#0;n#Render#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="101" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.3653846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/default/layout.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="439" column="9" selection-start="11507" selection-end="11507" vertical-scroll-proportion="0.63721806" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="291" selection-end="291" vertical-scroll-proportion="0.41541353">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/models/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="146" selection-end="146" vertical-scroll-proportion="0.28651685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/modules/main/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.25468165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -460,23 +466,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hot/Settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="61" selection-end="61" vertical-scroll-proportion="-1.9615384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hot/prototypes/database/CRUD.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="26" selection-start="160" selection-end="160" vertical-scroll-proportion="0.38202247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="23" selection-start="803" selection-end="803" vertical-scroll-proportion="0.7504798">
           <folding />
         </state>
       </provider>
@@ -491,6 +483,106 @@
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.031835206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/modules/main/AboutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.12734082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/modules/main/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="88" selection-end="185" vertical-scroll-proportion="0.22284645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/Settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="46" selection-start="264" selection-end="264" vertical-scroll-proportion="0.25468165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/systems/Render.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="21" selection-end="21" vertical-scroll-proportion="0.09550562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="510" column="9" selection-start="14828" selection-end="14828" vertical-scroll-proportion="0.3483146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="5" selection-start="1255" selection-end="1255" vertical-scroll-proportion="-14.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/modules/main/WelcomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/models/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="19" selection-end="32" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/systems/Tools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="-6.5384617">
+          <folding>
+            <element signature="n#getIncludedFiles#0;n#Tools#0;n#!!top" expanded="false" />
+            <element signature="n#checkForIncluded#0;n#Tools#0;n#!!top" expanded="false" />
+            <element signature="n#getFileNameFromFilePath#0;n#Tools#0;n#!!top" expanded="false" />
+            <element signature="n#getFileExtensionFromFilePath#0;n#Tools#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="228" selection-end="228" vertical-scroll-proportion="0.41385767">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="37" selection-start="3248" selection-end="3248" vertical-scroll-proportion="-13.346154">
+          <folding>
+            <element signature="n#LoadSettings#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#LoadCoreClasses#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#InitRouterSystem#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#InitRenderingSystem#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#InitController#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#IncludeController#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#CallControllerFunction#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#StartCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#EndCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#convert#0;n#Vehela#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="5" selection-start="27" selection-end="27" vertical-scroll-proportion="0.060714286">
           <folding />
         </state>
       </provider>
