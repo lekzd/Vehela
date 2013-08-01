@@ -1,18 +1,17 @@
 <?php
 
-    Class Users extends Model{
+class Users extends Model
+{
 
-        public $Email;
-        public $Password;
+    public $email;
+    public $password;
+    private $tableName = 'Users';
 
-        private $TableName = 'Users';
-
-        public function getTableName(){
-            return $this->TableName;
-        }
-
+    public function getTableName()
+    {
+        return $this->tableName;
     }
-
-
+    
+}
 
 ?>
