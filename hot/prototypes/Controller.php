@@ -4,13 +4,13 @@ abstract class Controller
 {
 
     protected $View;
-    protected $DBConnection;
+    protected $_dbObj;
     protected $Router;
     protected $Render;
 
-    public function __construct($DBConnection, $Router, $Render, $View)
+    public function __construct($Router, $Render, $View)
     {
-        $this->DBConnection = &$DBConnection;
+        $this->_dbObj = Registry::get('DB');
 
         $this->Router = &$Router;
         $this->Render = &$Render;
@@ -32,14 +32,17 @@ abstract class Controller
 
     public function Init()
     {
+        
     }
 
     public function beforeInit()
     {
+        
     }
 
     public function beforeDestruct()
     {
+        
     }
 
     public function MakeStampInLayout($VariableName, $Value)

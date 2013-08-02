@@ -1,6 +1,6 @@
 <?php
 
-Class Render
+class Render
 {
 
     private $Module;
