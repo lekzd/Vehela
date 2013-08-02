@@ -5,10 +5,16 @@ abstract class Controller
 
     protected $View;
     protected $DBConnection;
+    protected $Router;
+    protected $Render;
 
-    public function __construct($DBConnection, $View)
+    public function __construct($DBConnection, $Router, $Render, $View)
     {
         $this->DBConnection = &$DBConnection;
+
+        $this->Router = &$Router;
+        $this->Render = &$Render;
+
         if (method_exists($this, 'beforeInit'))
             $this->beforeInit();
 
@@ -21,39 +27,24 @@ abstract class Controller
         if (method_exists($this, 'beforeDestruct'))
             $this->beforeDestruct();
 
-        $this->Render();
+        $this->Render->RenderLayout($this->Render);
     }
 
     public function Init()
     {
-        
-    }
-
-    public function Render()
-    {
-        $this->View->View = str_replace('{$Content}', 'test', $this->View->View);
-        $this->View->Layout = str_replace('{$Content}', $this->View->View, $this->View->Layout);
-        print($this->View->Layout);
-    }
-
-    public function MakeStampInView($VariableName, $Value)
-    {
-        $this->View->View = str_replace('{$' . $VariableName . '}', $Value, $this->View->View);
-    }
-
-    public function MakeStampInLayout($VariableName, $Value)
-    {
-        $this->View->Layout = str_replace('{$' . $VariableName . '}', $Value, $this->View->Layout);
     }
 
     public function beforeInit()
     {
-        
     }
 
     public function beforeDestruct()
     {
-        
+    }
+
+    public function MakeStampInLayout($VariableName, $Value)
+    {
+        $this->View->Layout['variables'][$VariableName] = $Value;
     }
 
 }

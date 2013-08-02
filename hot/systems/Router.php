@@ -72,9 +72,9 @@
         }
 
         private function DefineRequestAsDefaultPage(){
-            $this->Module = 'Main';
-            $this->Controller = 'Welcome';
-            $this->Action = 'Hello';
+            $this->Module = 'static';
+            $this->Controller = 'welcome';
+            $this->Action = 'hello';
         }
 
 

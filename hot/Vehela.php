@@ -10,6 +10,7 @@ class Vehela
     private $ControllerName;
     private $start_time;
     private $DBConnection;
+    private $error;
     const RootDir = __DIR__;
 
     public function __construct()
@@ -28,6 +29,7 @@ class Vehela
         $this->LoadSettings();
         //$this->LoadDataBaseClasses();
         $this->LoadCoreClasses();
+        $this->LoadErrorHanlder();
         $this->Router = $this->InitRouterSystem();
         $this->Render = $this->InitRenderingSystem();
         //$this->DBConnection = new DataBase($this->_SETTINGS['DataBase']);
@@ -48,6 +50,12 @@ class Vehela
     private function LoadCoreClasses()
     {
         require_once('systems/Tools.php');
+        require_once('systems/TestErrorHandler.php');
+    }
+
+    private function LoadErrorHanlder(){
+        $this->error = new TestErrorHandler;
+        set_error_handler( array( $this->error, 'execute' ) );
     }
 
     private function LoadDataBaseClasses()
@@ -78,13 +86,13 @@ class Vehela
     private function IncludeController()
     {
         require_once('prototypes/Controller.php');
-        require_once('Modules/' . ucfirst($this->Router->Module) . '/' . ucfirst($this->Router->Controller) . 'Controller.php');
+        require_once('/../iframe/modules/' . $this->Router->Module . '/' . $this->Router->Controller . 'Controller.php');
     }
 
     private function CreateControllerObject($View)
     {
         $this->ControllerName = $this->Router->Controller . 'Controller';
-        $this->Controller = new $this->ControllerName($this->DBConnection, $View);
+        $this->Controller = new $this->ControllerName($this->DBConnection, $this->Router, $this->Render, $View);
     }
 
     private function CallControllerFunction()
