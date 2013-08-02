@@ -15,12 +15,22 @@
     <file path="/layout.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375429208366" ignored="false" />
     <file path="/style.css" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375436289539" ignored="false" />
     <file path="/welcome.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375428094472" ignored="false" />
-    <file path="/InfoController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375432029308" ignored="false" />
+    <file path="/InfoController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375468934492" ignored="false" />
     <file path="/Router.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375429633477" ignored="false" />
     <file path="/Render.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375438796439" ignored="false" />
     <file path="/team.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375430656266" ignored="false" />
     <file path="/about.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375433532548" ignored="false" />
     <file path="/TestErrorHandler.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375436139469" ignored="false" />
+    <file path="C:/Код/MCTop11/test.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375447009583" ignored="false" />
+    <file path="/test.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375446935731" ignored="false" />
+    <file path="/settings.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375451261355" ignored="false" />
+    <file path="/debug.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375451505890" ignored="false" />
+    <file path="/User.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375463426566" ignored="false" />
+    <file path="/Model.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375460674621" ignored="false" />
+    <file path="/Registry.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375456962946" ignored="false" />
+    <file path="/ActiveRecord.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375468639901" ignored="false" />
+    <file path="/CRUD.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375459337212" ignored="false" />
+    <file path="C:/Код/MCTop11/skins/Main/css/style.css" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375462058011" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,29 +50,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WelcomeController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/iframe/modules/static/WelcomeController.php">
+      <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="294" selection-end="294" vertical-scroll-proportion="0.4456929">
+            <state line="13" column="11" selection-start="260" selection-end="260" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vehela.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
+      <file leaf-file-name="InfoController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iframe/modules/static/InfoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="51" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="701" selection-end="701" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Render.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hot/systems/Render.php">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="65" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.12142857">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiveRecord.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/prototypes/database/ActiveRecord.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="0" selection-start="1771" selection-end="1771" vertical-scroll-proportion="-5.230769">
+              <folding>
+                <element signature="n#save#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+                <element signature="n#deleteById#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+                <element signature="n#getById#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+                <element signature="n#getAll#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+                <element signature="n#IsItNewRecord#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,22 +102,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/templates/default/modules/main/welcome.tpl" />
-        <option value="$PROJECT_DIR$/static/templates/default/modules/static/info.tpl" />
-        <option value="$PROJECT_DIR$/static/templates/default/modules/static/team.tpl" />
-        <option value="$PROJECT_DIR$/hot/systems/Router.php" />
-        <option value="$PROJECT_DIR$/iframe/modules/static/AboutController.php" />
-        <option value="$PROJECT_DIR$/iframe/modules/static/InfoController.php" />
-        <option value="$PROJECT_DIR$/static/templates/default/modules/static/info/about.tpl" />
-        <option value="$PROJECT_DIR$/hot/prototypes/Controller.php" />
-        <option value="$PROJECT_DIR$/static/templates/default/layout.tpl" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/hot/systems/Tools.php" />
         <option value="$PROJECT_DIR$/hot/systems/TestErrorHandler.php" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/hot/Vehela.php" />
         <option value="$PROJECT_DIR$/hot/systems/Render.php" />
         <option value="$PROJECT_DIR$/iframe/modules/static/WelcomeController.php" />
+        <option value="$PROJECT_DIR$/hot/Vehela.php" />
+        <option value="$PROJECT_DIR$/hot/settings.php" />
+        <option value="$PROJECT_DIR$/static/templates/default/modules/static/info/debug.tpl" />
+        <option value="$PROJECT_DIR$/hot/systems/Registry.php" />
+        <option value="$PROJECT_DIR$/hot/prototypes/database/CRUD.php" />
+        <option value="$PROJECT_DIR$/hot/prototypes/Model.php" />
+        <option value="$PROJECT_DIR$/hot/models/User.php" />
+        <option value="$PROJECT_DIR$/hot/prototypes/database/ActiveRecord.php" />
+        <option value="$PROJECT_DIR$/iframe/modules/static/InfoController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -100,7 +125,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -129,16 +154,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,6 +263,144 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vilay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vilay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iframe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vilay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vilay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vilay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vilay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -258,8 +411,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -343,15 +496,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27424243" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27887538" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -430,92 +583,123 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/bootstrap-examples-master/starter-template/index.html">
+    <entry file="file://$PROJECT_DIR$/iframe/modules/static/WelcomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1642" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/systems/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="34" selection-start="1953" selection-end="1958" vertical-scroll-proportion="0.50749063" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/info/info.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="0" selection-end="262" vertical-scroll-proportion="0.15917604" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/info/about.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="47" selection-start="146" selection-end="146" vertical-scroll-proportion="0.06367041" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/info/team.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="283" selection-end="283" vertical-scroll-proportion="0.2284069" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iframe/modules/static/InfoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="49" selection-start="350" selection-end="350" vertical-scroll-proportion="0.38202247" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/systems/Tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.4456929" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/default/layout.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1405" selection-end="1462" vertical-scroll-proportion="0.670412" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="32" selection-start="70" selection-end="70" vertical-scroll-proportion="0.030357143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/systems/TestErrorHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.31835207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/welcome/hello.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="0" selection-end="262" vertical-scroll-proportion="0.09550562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="15" selection-start="22" selection-end="22" vertical-scroll-proportion="0.06367041">
-          <folding>
-            <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="18" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="51" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="-12.423077">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hot/systems/Render.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="65" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
+        <state line="30" column="65" selection-start="610" selection-end="610" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iframe/modules/static/WelcomeController.php">
+    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/info/debug.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="294" selection-end="294" vertical-scroll-proportion="0.4456929">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/php-activerecord/ActiveRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/systems/Registry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="615" selection-end="615" vertical-scroll-proportion="-19.23077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="51" selection-start="672" selection-end="672" vertical-scroll-proportion="-1.8272552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/systems/Tools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.23782772">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="32" selection-start="75" selection-end="75" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/database/CRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="15" selection-start="57" selection-end="57" vertical-scroll-proportion="0.12734082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="9" selection-start="6235" selection-end="6235" vertical-scroll-proportion="0.34932822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/DataBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="8" selection-start="653" selection-end="684" vertical-scroll-proportion="0.17977528">
+          <folding>
+            <element signature="n#Connect#0;n#DataBase#0;n#!!top" expanded="false" />
+            <element signature="n#getConnection#0;n#DataBase#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="111" selection-end="111" vertical-scroll-proportion="0.25468165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/database/ActiveRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="1771" selection-end="1771" vertical-scroll-proportion="-5.230769">
+          <folding>
+            <element signature="n#save#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+            <element signature="n#deleteById#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+            <element signature="n#getById#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+            <element signature="n#getAll#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+            <element signature="n#IsItNewRecord#0;n#ActiveRecord#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="260" selection-end="260" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iframe/modules/static/InfoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="701" selection-end="701" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.12142857">
           <folding />
         </state>
       </provider>

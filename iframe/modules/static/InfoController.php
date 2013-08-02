@@ -15,8 +15,19 @@
             $this->Render->RenderView('team');
         }
 
+        public function debug(){
+            $this->MakeStampInLayout('Title', '#debugPage');
+            $this->MakeStampInLayout('PageName', '#debugPage');
+
+
+            $User = Vehela::Model('User')->getById(1);
+
+            var_dump($User);
+
+        }
+
         public function beforeDestruct(){
-            //die();
+            die();
         }
 
     }

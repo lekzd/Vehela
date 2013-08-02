@@ -28,6 +28,10 @@ class Registry
         }
     }
 
+    public static function showItems(){
+        return Registry::$r;
+    }
+
 }
 
 ?>

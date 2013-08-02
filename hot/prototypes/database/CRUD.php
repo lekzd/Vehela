@@ -1,6 +1,8 @@
 <?php
 
-abstract class CRUD
+require_once('ActiveRecord.php');
+
+abstract class CRUD extends ActiveRecord
 {
 
     public function Create()
