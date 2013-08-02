@@ -5,8 +5,8 @@ class RegisterController extends Controller
 
     public function Start()
     {
-        require_once('/../../Models/Users.php');
-        $Users = new Users($this->DBConnection);
+        require_once('/../../models/Users.php');
+        $Users = new Users();
 
         die();
         $this->MakeStampInLayout('PageName', 'Регистрация');

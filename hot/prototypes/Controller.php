@@ -4,11 +4,11 @@ abstract class Controller
 {
 
     protected $View;
-    protected $DBConnection;
+    protected $_dbObj;
 
-    public function __construct($DBConnection, $View)
+    public function __construct($View)
     {
-        $this->DBConnection = &$DBConnection;
+        $this->_dbObj = Registry::get('DB');
         if (method_exists($this, 'beforeInit'))
             $this->beforeInit();
 

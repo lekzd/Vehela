@@ -5,12 +5,12 @@ require_once('database/CRUD.php');
 abstract class Model extends CRUD
 {
 
-    private $Connection;
+    private $_dbObj;
     private $TableName;
 
-    public function __construct($Connection)
+    public function __construct()
     {
-        $this->Connection = &$Connection;
+        $this->_dbObj = Registry::get('DB');
     }
 
     public function getTableName()

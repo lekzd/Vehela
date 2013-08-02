@@ -9,7 +9,6 @@ class Vehela
     private $Controller;
     private $ControllerName;
     private $start_time;
-    private $DBConnection;
     const RootDir = __DIR__;
 
     public function __construct()
@@ -26,11 +25,11 @@ class Vehela
     private function Init()
     {
         $this->LoadSettings();
-        //$this->LoadDataBaseClasses();
+        $this->LoadDataBaseClasses();
         $this->LoadCoreClasses();
         $this->Router = $this->InitRouterSystem();
         $this->Render = $this->InitRenderingSystem();
-        //$this->DBConnection = new DataBase($this->_SETTINGS['DataBase']);
+        Registry::add('DB', new DataBase($this->_SETTINGS['DataBase']));
         $this->InitController($this->Render);
     }
 
@@ -38,7 +37,7 @@ class Vehela
     {
         $_SETTINGS = array();
 
-        require_once('Settings.php');
+        require_once('settings.php');
 
         foreach ($_SETTINGS as $key => $value) {
             $this->_SETTINGS[$key] = $value;
@@ -47,6 +46,7 @@ class Vehela
 
     private function LoadCoreClasses()
     {
+        require_once('systems/Registry.php');
         require_once('systems/Tools.php');
     }
 
@@ -84,7 +84,7 @@ class Vehela
     private function CreateControllerObject($View)
     {
         $this->ControllerName = $this->Router->Controller . 'Controller';
-        $this->Controller = new $this->ControllerName($this->DBConnection, $View);
+        $this->Controller = new $this->ControllerName($View);
     }
 
     private function CallControllerFunction()
@@ -101,7 +101,7 @@ class Vehela
     private function EndCalculate()
     {
         $time = microtime(true) - $this->start_time;
-        printf("<div class='debug_generation_time'>Страница сгенерирована за %f секунд.<br/> Использовано %s</div>", $time, $this->convert(memory_get_usage(true)));
+        printf("<div class=\"debug_generation_time\">Страница сгенерирована за %f секунд.<br/> Использовано %s</div>", $time, $this->convert(memory_get_usage(true)));
     }
 
     private function convert($size)
@@ -110,13 +110,13 @@ class Vehela
         return @round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
     }
 
-    public static function Model($ModelName){
+    public static function Model($ModelName)
+    {
+        if (!Tools::checkForIncluded('Model'))
+            Tools::includeFile(self::RootDir . '/prototypes/Model.php');
 
-        if(!Tools::checkForIncluded("Model"))
-            Tools::includeFile(Vehela::RootDir."/prototypes/Model.php");
-
-        if(!Tools::checkForIncluded($ModelName))
-            Tools::includeFile(Vehela::RootDir."/models/{$ModelName}.php");
+        if (!Tools::checkForIncluded($ModelName))
+            Tools::includeFile(self::RootDir . "/models/{$ModelName}.php");
 
         $Model = new $ModelName('oups');
 
