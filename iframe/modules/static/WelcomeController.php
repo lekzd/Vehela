@@ -1,6 +1,6 @@
 <?php
 
-class WelcomeController extends Controller
+class WelcomeController extends PController
 {
 
     public function Init()
@@ -12,9 +12,8 @@ class WelcomeController extends Controller
     {
         $this->MakeStampInLayout('Title', 'Главная');
         $this->MakeStampInLayout('PageName', 'Главная страница');
-        $this->Render->RenderView('hello');
 
-        $User = Vehela::Model('Users');
+        $User = Vehela::Model('User');
 
     }
 

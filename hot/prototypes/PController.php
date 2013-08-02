@@ -1,6 +1,6 @@
 <?php
 
-abstract class Controller
+abstract class PController
 {
 
     protected $View;
@@ -48,6 +48,11 @@ abstract class Controller
     public function MakeStampInLayout($VariableName, $Value)
     {
         $this->View->Layout['variables'][$VariableName] = $Value;
+    }
+
+    public function CallAction($ActionName){
+        if(method_exists($this,$ActionName))
+            $this->$ActionName();
     }
 
 }

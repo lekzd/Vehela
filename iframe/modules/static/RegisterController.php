@@ -1,6 +1,6 @@
 <?php
 
-class RegisterController extends Controller
+class RegisterController extends PController
 {
 
     public function Start()

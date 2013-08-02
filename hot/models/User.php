@@ -1,17 +1,19 @@
 <?php
 
-class User extends Model
-{
+    class User extends PModel
+    {
 
-    public $id;
-    public $login;
-    public $email;
-    public $pass_salt;
-    public $pass_hash;
-    protected $tableName = 'user';
+        public $id;
+        public $login;
+        public $email;
+        public $pass_salt;
+        public $pass_hash;
+        protected $tableName = 'user';
 
 
 
-}
+    }
 
 ?>
+
+    

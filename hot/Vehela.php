@@ -20,7 +20,8 @@ class Vehela
 
     public function __destruct()
     {
-        $this->EndCalculate();
+        if(!$this->Router->Controller == 'api')
+            $this->EndCalculate();
     }
 
     private function Init()
@@ -31,7 +32,7 @@ class Vehela
         $this->LoadErrorHanlder();
         $this->Router = $this->InitRouterSystem();
         $this->Render = $this->InitRenderingSystem();
-        Registry::add('DB', new DataBase($this->_SETTINGS['DataBase']));
+        Registry::add('DB', new PDataBase($this->_SETTINGS['DataBase']));
         $this->InitController($this->Render);
     }
 
@@ -60,8 +61,8 @@ class Vehela
 
     private function LoadDataBaseClasses()
     {
-        require_once('prototypes/DataBase.php');
-        require_once('prototypes/Model.php');
+        require_once('prototypes/PDataBase.php');
+        require_once('prototypes/PModel.php');
     }
 
     private function InitRouterSystem()
@@ -78,14 +79,23 @@ class Vehela
 
     private function InitController($View)
     {
-        $this->IncludeController();
-        $this->CreateControllerObject($View);
-        $this->CallControllerFunction();
+
+        if(!$this->IsAPIRequest()){
+            require_once('prototypes/PController.php');
+            $this->IncludeController();
+            $this->CreateControllerObject($View);
+            $this->CallControllerFunction();
+        }
+        else{
+            require_once('prototypes/PAPIController.php');
+            require_once('modules/main/APIController.php');
+        }
+
+
     }
 
     private function IncludeController()
     {
-        require_once('prototypes/Controller.php');
         require_once('/../iframe/modules/' . $this->Router->Module . '/' . $this->Router->Controller . 'Controller.php');
     }
 
@@ -97,8 +107,7 @@ class Vehela
 
     private function CallControllerFunction()
     {
-        $ActionName = $this->Router->Action;
-        $this->Controller->$ActionName();
+        $this->Controller->CallAction($this->Router->Action);
     }
 
     private function StartCalculate()
@@ -118,10 +127,20 @@ class Vehela
         return @round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
     }
 
+    private function IsAPIRequest(){
+
+        if($this->Router->Controller == 'api')
+            return 1;
+
+        else
+            return 0;
+
+    }
+
     public static function Model($ModelName)
     {
         if (!Tools::checkForIncluded('Model'))
-            Tools::includeFile(self::RootDir . '/prototypes/Model.php');
+            Tools::includeFile(self::RootDir . '/prototypes/PModel.php');
 
         if (!Tools::checkForIncluded($ModelName))
             Tools::includeFile(self::RootDir . "/models/{$ModelName}.php");

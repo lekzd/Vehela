@@ -2,7 +2,7 @@
 
 require_once('database/CRUD.php');
 
-abstract class Model extends CRUD
+abstract class PModel extends CRUD
 {
 
     public function __construct()

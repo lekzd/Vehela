@@ -1,11 +1,12 @@
 <?php
 
-    Class InfoController extends Controller{
+    Class InfoController extends PController{
 
 
         public function about(){
             $this->MakeStampInLayout('Title', 'О проекте');
             $this->MakeStampInLayout('PageName', 'О проекте');
+
             $this->Render->RenderView('about');
         }
 
@@ -20,14 +21,12 @@
             $this->MakeStampInLayout('PageName', '#debugPage');
 
 
-            $User = Vehela::Model('User')->getById(1);
-
-            var_dump($User);
+            $this->Render->RenderView('tes');
 
         }
 
         public function beforeDestruct(){
-            die();
+            //die();
         }
 
     }
