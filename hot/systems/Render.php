@@ -1,6 +1,6 @@
 <?php
 
-Class Render
+class Render
 {
 
     private $Module;
@@ -19,36 +19,59 @@ Class Render
 
     private function Init()
     {
+    }
 
-        $this->Layout = $this->getLayout();
-        $this->View = $this->getTemplate($this->Module);
-        $this->View = str_replace('{$view}', 'view', $this->View);
+    public function RenderLayout($Render)
+    {
 
-        $this->Layout = str_replace('{$ModuleName}', $this->Router->ModuleName, $this->Layout);
-        //$this->Layout = str_replace('{$Content}', $this->View, $this->Layout);
+        if(empty($Render->View))
+            $Render->View = new ArrayObject();
 
-        $ret = array();
-        $ret['Layout'] = $this->Layout;
-        $ret['View'] = $this->View;
+        if(empty($Render->View->View))
+            $Render->View->View = $this->getTplFile($this->Action);
 
-        return $ret;
+        $Render->View->Layout = str_replace('{$Content}', $Render->View->View, $this->getLayout());
+
+        if(!empty($Render->Layout['variables']))
+            foreach($Render->Layout['variables'] as $key => $variable){
+                $Render->View->Layout = $this->MakeStampInLayout($Render->View->Layout, $key,$variable);
+            }
+
+        print($Render->View->Layout);
+    }
+
+    public function RenderView($ViewName){
+
+        if(empty($this->View))
+            $this->View = new ArrayObject();
+
+        $this->View->View = $this->getTplFile($ViewName);
+    }
+
+    public function MakeStampInLayout($RenderLayout, $VariableName, $Value)
+    {
+        return str_replace('{$' . $VariableName . '}', $Value, $RenderLayout);
     }
 
     public function getLayout()
     {
-        return $this->getTplFile('/../../static/templates/default/layout');
+        return $this->getTplFile('../../../layout');
     }
 
-    public function getTemplate()
+    public function getView($TemplateName)
     {
         $this->IsRequestForMainPage();
-        return $this->getTplFile("/../../static/templates/default/modules/{$this->Module}/{$this->Controller}");
+        return $this->getTplFile($TemplateName);
     }
 
-    private function getTplFile($location)
+    private function getTplFile($TemplateName)
     {
+
+        if(!file_exists(Vehela::RootDir."/../static/templates/default/modules/{$this->Module}/{$this->Controller}/{$TemplateName}.tpl"))
+            echo "Файл представления {$TemplateName} не существует ";
+
         ob_start();
-        include ($location . '.tpl');
+        include (Vehela::RootDir."/../static/templates/default/modules/{$this->Module}/{$this->Controller}/{$TemplateName}.tpl");
         $tpl = ob_get_clean();
         return $tpl;
     }
@@ -64,7 +87,6 @@ Class Render
         if (empty($this->Action))
             $this->Action = 'hello';
     }
-
 }
 
 ?>
