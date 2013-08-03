@@ -5,26 +5,26 @@
     <ignored path="Vilay.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.dummy" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485146939" ignored="false" />
-    <file path="/Vehela.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375486370706" ignored="false" />
+    <file path="/Vehela.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375547797095" ignored="false" />
     <file path="/main.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375373093515" ignored="false" />
-    <file path="/WelcomeController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485559164" ignored="false" />
+    <file path="/WelcomeController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375524135164" ignored="false" />
     <file path="/Users.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375374322774" ignored="false" />
     <file path="/Controller.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375431976788" ignored="false" />
     <file path="/Tools.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375486219994" ignored="false" />
     <file path="/.gitignore" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375385840821" ignored="false" />
-    <file path="/layout.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375429208366" ignored="false" />
-    <file path="/style.css" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375436289539" ignored="false" />
+    <file path="/layout.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375546971600" ignored="false" />
+    <file path="/style.css" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375547325562" ignored="false" />
     <file path="/welcome.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375428094472" ignored="false" />
-    <file path="/InfoController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485547052" ignored="false" />
+    <file path="/InfoController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375547818675" ignored="false" />
     <file path="/Router.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375429633477" ignored="false" />
-    <file path="/Render.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375438796439" ignored="false" />
+    <file path="/Render.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375548755624" ignored="false" />
     <file path="/team.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375430656266" ignored="false" />
     <file path="/about.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375433532548" ignored="false" />
     <file path="/TestErrorHandler.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375436139469" ignored="false" />
     <file path="C:/Код/MCTop11/test.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375483331096" ignored="false" />
     <file path="/test.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375483330315" ignored="false" />
     <file path="/settings.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375451261355" ignored="false" />
-    <file path="/debug.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375451505890" ignored="false" />
+    <file path="/debug.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375552615748" ignored="false" />
     <file path="/User.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485957449" ignored="false" />
     <file path="/Model.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375460674621" ignored="false" />
     <file path="/Registry.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375456962946" ignored="false" />
@@ -32,13 +32,17 @@
     <file path="/CRUD.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375459337212" ignored="false" />
     <file path="C:/Код/MCTop11/skins/Main/css/style.css" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375462058011" ignored="false" />
     <file path="/API.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375483391538" ignored="false" />
-    <file path="/APIController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485022789" ignored="false" />
-    <file path="/PAPIController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375484977666" ignored="false" />
+    <file path="/APIController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375546798201" ignored="false" />
+    <file path="/PAPIController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375546707660" ignored="false" />
     <file path="/PAPI.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485180800" ignored="false" />
-    <file path="/PController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485892587" ignored="false" />
+    <file path="/PController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375534712009" ignored="false" />
     <file path="/PDataBase.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485190040" ignored="false" />
     <file path="/PModel.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485193763" ignored="false" />
     <file path="/RegisterController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375485554915" ignored="false" />
+    <file path="/PException.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375545926216" ignored="false" />
+    <file path="/hello.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375547258190" ignored="false" />
+    <file path="/DebugController.php" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375548570497" ignored="false" />
+    <file path="/classes.tpl" changelist="891c698f-4a3c-4d9f-a266-9842021427dd" time="1375552776853" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,35 +62,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hot/settings.php">
+      <file leaf-file-name="Vehela.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="5" selection-start="227" selection-end="227" vertical-scroll-proportion="-5.8846154">
+            <state line="172" column="42" selection-start="4714" selection-end="4714" vertical-scroll-proportion="-7.980392">
+              <folding>
+                <element signature="n#LoadErrorHanlder#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#LoadDataBaseClasses#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#InitRouterSystem#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#InitRenderingSystem#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#InitController#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#IncludeController#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#CreateControllerObject#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#CheckNeedlessDataBase#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#CallControllerFunction#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#StartCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#EndCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#convert#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#IsAPIRequest#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#IsRequestedStaticModule#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#Model#0;n#Vehela#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DebugController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iframe/modules/static/DebugController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vehela.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
+      <file leaf-file-name="classes.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/debug/classes.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="32" selection-start="353" selection-end="353" vertical-scroll-proportion="-0.33146068">
+            <state line="11" column="5" selection-start="121" selection-end="121" vertical-scroll-proportion="-7.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.2125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debug.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/info/debug.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hot/prototypes/PController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="18" selection-start="244" selection-end="250" vertical-scroll-proportion="-3.1764705">
               <folding>
-                <element signature="n#__destruct#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#Init#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#LoadSettings#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#LoadCoreClasses#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#LoadErrorHanlder#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#LoadDataBaseClasses#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#InitRouterSystem#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#InitRenderingSystem#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#IncludeController#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#CreateControllerObject#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#CallControllerFunction#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#StartCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#EndCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#convert#0;n#Vehela#0;n#!!top" expanded="false" />
-                <element signature="n#Model#0;n#Vehela#0;n#!!top" expanded="false" />
+                <element signature="n#Init#0;n#PController#0;n#!!top" expanded="false" />
+                <element signature="n#beforeInit#0;n#PController#0;n#!!top" expanded="false" />
+                <element signature="n#beforeDestruct#0;n#PController#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -102,22 +146,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hot/prototypes/database/ActiveRecord.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/hot/prototypes/API.php" />
-        <option value="$PROJECT_DIR$/hot/prototypes/Controller.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/iframe/modules/static/WelcomeController.php" />
+        <option value="$PROJECT_DIR$/hot/prototypes/PController.php" />
+        <option value="$PROJECT_DIR$/hot/prototypes/PException.php" />
         <option value="$PROJECT_DIR$/hot/prototypes/PAPIController.php" />
         <option value="$PROJECT_DIR$/hot/modules/main/APIController.php" />
-        <option value="$PROJECT_DIR$/hot/prototypes/PAPI.php" />
-        <option value="$PROJECT_DIR$/hot/prototypes/PDataBase.php" />
-        <option value="$PROJECT_DIR$/hot/prototypes/PModel.php" />
-        <option value="$PROJECT_DIR$/iframe/modules/static/InfoController.php" />
-        <option value="$PROJECT_DIR$/iframe/modules/static/RegisterController.php" />
-        <option value="$PROJECT_DIR$/hot/prototypes/PController.php" />
-        <option value="$PROJECT_DIR$/hot/models/User.php" />
-        <option value="$PROJECT_DIR$/iframe/modules/static/WelcomeController.php" />
-        <option value="$PROJECT_DIR$/hot/systems/Tools.php" />
+        <option value="$PROJECT_DIR$/static/templates/default/layout.tpl" />
+        <option value="$PROJECT_DIR$/static/templates/default/modules/static/welcome/hello.tpl" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/hot/Vehela.php" />
+        <option value="$PROJECT_DIR$/hot/systems/Render.php" />
+        <option value="$PROJECT_DIR$/iframe/modules/static/DebugController.php" />
+        <option value="$PROJECT_DIR$/static/templates/default/modules/static/info/debug.tpl" />
+        <option value="$PROJECT_DIR$/iframe/modules/static/InfoController.php" />
+        <option value="$PROJECT_DIR$/static/templates/default/modules/static/debug/classes.tpl" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -237,8 +281,38 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="welcome" />
+              <option name="myItemId" value="Vilay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,6 +343,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="debug" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,8 +507,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -519,12 +597,12 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28039515" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2849544" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -533,8 +611,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -601,134 +679,135 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/PModel.php">
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/PException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="59" selection-end="59" vertical-scroll-proportion="0.1325536">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/PDataBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0662768">
-          <folding>
-            <element signature="n#Connect#0;n#PDataBase#0;n#!!top" expanded="false" />
-            <element signature="n#getConnection#0;n#PDataBase#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/PAPIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.12734082">
+        <state line="7" column="9" selection-start="151" selection-end="151" vertical-scroll-proportion="-4.576923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hot/prototypes/PAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="18" selection-end="18" vertical-scroll-proportion="0.06367041">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/database/ActiveRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="1771" selection-end="1771" vertical-scroll-proportion="2.132959">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/database/CRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/systems/Registry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.06367041">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iframe/modules/static/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iframe/modules/static/InfoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.09550562">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="227" selection-end="227" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iframe/modules/static/WelcomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="65" selection-start="256" selection-end="256" vertical-scroll-proportion="0.41385767">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/prototypes/PController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="32" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.71348315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hot/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="35" selection-end="35" vertical-scroll-proportion="0.06367041">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hot/modules/main/APIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="43" selection-end="43" vertical-scroll-proportion="0.06367041">
+        <state line="6" column="60" selection-start="188" selection-end="188" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hot/systems/Tools.php">
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="5" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.91198504">
+        <state line="22" column="29" selection-start="348" selection-end="348" vertical-scroll-proportion="0.39517626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/welcome/hello.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="48" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0331384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/default/layout.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="104" selection-start="1412" selection-end="1412" vertical-scroll-proportion="-5.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="716" column="0" selection-start="21252" selection-end="21252" vertical-scroll-proportion="-7.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/PController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="244" selection-end="250" vertical-scroll-proportion="-3.1764705">
+          <folding>
+            <element signature="n#Init#0;n#PController#0;n#!!top" expanded="false" />
+            <element signature="n#beforeInit#0;n#PController#0;n#!!top" expanded="false" />
+            <element signature="n#beforeDestruct#0;n#PController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/systems/Render.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="52" selection-start="1233" selection-end="1233" vertical-scroll-proportion="-11.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hot/prototypes/PAPIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="9" selection-start="213" selection-end="213" vertical-scroll-proportion="-7.1923075">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="353" selection-end="353" vertical-scroll-proportion="-0.33146068">
+        <state line="172" column="42" selection-start="4714" selection-end="4714" vertical-scroll-proportion="-7.980392">
           <folding>
-            <element signature="n#__destruct#0;n#Vehela#0;n#!!top" expanded="false" />
-            <element signature="n#Init#0;n#Vehela#0;n#!!top" expanded="false" />
-            <element signature="n#LoadSettings#0;n#Vehela#0;n#!!top" expanded="false" />
-            <element signature="n#LoadCoreClasses#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#LoadErrorHanlder#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#LoadDataBaseClasses#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#InitRouterSystem#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#InitRenderingSystem#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#InitController#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#IncludeController#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#CreateControllerObject#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#CheckNeedlessDataBase#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#CallControllerFunction#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#StartCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#EndCalculate#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#convert#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#IsAPIRequest#0;n#Vehela#0;n#!!top" expanded="false" />
+            <element signature="n#IsRequestedStaticModule#0;n#Vehela#0;n#!!top" expanded="false" />
             <element signature="n#Model#0;n#Vehela#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/info/debug.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iframe/modules/static/InfoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="56" selection-start="481" selection-end="481" vertical-scroll-proportion="0.5093633">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iframe/modules/static/DebugController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/default/modules/static/debug/classes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="121" selection-end="121" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.2125">
+          <folding />
         </state>
       </provider>
     </entry>

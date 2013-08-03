@@ -12,9 +12,7 @@ class WelcomeController extends PController
     {
         $this->MakeStampInLayout('Title', 'Главная');
         $this->MakeStampInLayout('PageName', 'Главная страница');
-
         $User = Vehela::Model('User');
-
     }
 
 }

@@ -20,7 +20,7 @@ class Vehela
 
     public function __destruct()
     {
-        if(!$this->Router->Controller == 'api')
+        if(!Registry::get('Router')->Controller == 'api')
             $this->EndCalculate();
     }
 
@@ -30,10 +30,9 @@ class Vehela
         $this->LoadDataBaseClasses();
         $this->LoadCoreClasses();
         $this->LoadErrorHanlder();
-        $this->Router = $this->InitRouterSystem();
-        $this->Render = $this->InitRenderingSystem();
-        Registry::add('DB', new PDataBase($this->_SETTINGS['DataBase']));
-        $this->InitController($this->Render);
+        $this->InitRouterSystem();
+        $this->InitController();
+        $this->InitRenderingSystem();
     }
 
     private function LoadSettings()
@@ -52,6 +51,7 @@ class Vehela
         require_once('systems/Registry.php');
         require_once('systems/Tools.php');
         require_once('systems/TestErrorHandler.php');
+        require_once('prototypes/PException.php');
     }
 
     private function LoadErrorHanlder(){
@@ -68,46 +68,58 @@ class Vehela
     private function InitRouterSystem()
     {
         require_once('systems/Router.php');
-        return new Router();
+        Registry::add('Router',new Router());
     }
 
     private function InitRenderingSystem()
     {
         require_once('systems/Render.php');
-        return new Render($this->Router->Module, $this->Router->Controller, $this->Router->Action);
+        Registry::add('Render', new Render(Registry::get('Router')));
     }
 
-    private function InitController($View)
+    private function InitController()
     {
 
-        if(!$this->IsAPIRequest()){
-            require_once('prototypes/PController.php');
-            $this->IncludeController();
-            $this->CreateControllerObject($View);
-            $this->CallControllerFunction();
-        }
-        else{
+        if($this->IsAPIRequest()){
             require_once('prototypes/PAPIController.php');
             require_once('modules/main/APIController.php');
+            $this->CreateControllerObject();
+            $ActionName = Registry::get('Router')->Action;
+            if(method_exists(Registry::get('Controller'),$ActionName))
+                Registry::get('Controller')->$ActionName();
+            else
+                throw new PException('Action not found',404);
+        }
+        else{
+            require_once('prototypes/PController.php');
+            $this->IncludeController();
+            $this->CreateControllerObject();
+            $this->CheckNeedlessDataBase();
+            $this->CallControllerFunction();
         }
 
+        //Registry::add('DB', new PDataBase($this->_SETTINGS['DataBase']));
 
     }
 
     private function IncludeController()
     {
-        require_once('/../iframe/modules/' . $this->Router->Module . '/' . $this->Router->Controller . 'Controller.php');
+        require_once('/../iframe/modules/' . Registry::get('Router')->Module . '/' . Registry::get('Router')->Controller . 'Controller.php');
     }
 
-    private function CreateControllerObject($View)
+    private function CreateControllerObject()
     {
-        $this->ControllerName = $this->Router->Controller . 'Controller';
-        $this->Controller = new $this->ControllerName($this->Router, $this->Render, $View);
+        $this->ControllerName = Registry::get('Router')->Controller . 'Controller';
+        Registry::add('Controller', new $this->ControllerName(Registry::get('Router')));
+    }
+
+    private function CheckNeedlessDataBase(){
+        $this->IsRequestedStaticModule();
     }
 
     private function CallControllerFunction()
     {
-        $this->Controller->CallAction($this->Router->Action);
+        Registry::get('Controller')->CallAction(Registry::get('Router')->Action);
     }
 
     private function StartCalculate()
@@ -129,12 +141,19 @@ class Vehela
 
     private function IsAPIRequest(){
 
-        if($this->Router->Controller == 'api')
+        if(Registry::get('Router')->Controller == 'api')
             return 1;
 
         else
             return 0;
 
+    }
+
+    private function IsRequestedStaticModule(){
+        if(Registry::get('Router')->Module=='static')
+            return 1;
+        else
+            return 0;
     }
 
     public static function Model($ModelName)
@@ -150,8 +169,9 @@ class Vehela
         return $Model;
     }
 
-
-
+    public static function RequestMethod(){
+        return $_SERVER['REQUEST_METHOD'];
+    }
 }
 
 ?>

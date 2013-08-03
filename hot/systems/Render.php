@@ -3,17 +3,13 @@
 class Render
 {
 
-    private $Module;
-    private $Controller;
-    private $Action;
+    private $Router;
     public $Layout;
     public $View;
 
-    public function __construct($Module, $Controller, $Action)
+    public function __construct($Router)
     {
-        $this->Module = $Module;
-        $this->Controller = $Controller;
-        $this->Action = $Action;
+        $this->Router = &$Router;
         $this->Init();
     }
 
@@ -21,23 +17,21 @@ class Render
     {
     }
 
-    public function RenderLayout($Render)
+    public function CompileLayout()
     {
 
-        if(empty($Render->View))
-            $Render->View = new ArrayObject();
+        $this->View = $this->getTplFile($this->Router->Action);
 
-        if(empty($Render->View->View))
-            $Render->View->View = $this->getTplFile($this->Action);
+        $this->Layout = str_replace('{$Content}', $this->View, $this->getLayout());
 
-        $Render->View->Layout = str_replace('{$Content}', $Render->View->View, $this->getLayout());
 
-        if(!empty($Render->Layout['variables']))
-            foreach($Render->Layout['variables'] as $key => $variable){
-                $Render->View->Layout = $this->MakeStampInLayout($Render->View->Layout, $key,$variable);
+        if(!empty(Registry::get('Controller')->Render->Layout['variables']))
+            foreach(Registry::get('Controller')->Render->Layout['variables'] as $VariableName => $Value){
+                $this->MakeStampInLayout($VariableName,$Value);
             }
+        else
+            echo 'Variables is empty';
 
-        print($Render->View->Layout);
     }
 
     public function RenderView($ViewName){
@@ -48,9 +42,12 @@ class Render
         $this->View->View = $this->getTplFile($ViewName);
     }
 
-    public function MakeStampInLayout($RenderLayout, $VariableName, $Value)
+    public function MakeStampInLayout($VariableName, $Value)
     {
-        return str_replace('{$' . $VariableName . '}', $Value, $RenderLayout);
+        if(gettype($Value)!='array')
+            Registry::get('Render')->Layout = str_replace('{$' . $VariableName . '}', $Value, Registry::get('Render')->Layout);
+        else
+            Registry::get('Render')->Layout = str_replace('{$' . $VariableName . '}', $Value, Registry::get('Render')->Layout);
     }
 
     public function getLayout()
@@ -67,11 +64,11 @@ class Render
     private function getTplFile($TemplateName)
     {
 
-        if(!file_exists(Vehela::RootDir."/../static/templates/default/modules/{$this->Module}/{$this->Controller}/{$TemplateName}.tpl"))
+        if(!file_exists(Vehela::RootDir."/../static/templates/default/modules/{$this->Router->Module}/{$this->Router->Controller}/{$TemplateName}.tpl"))
             echo "Файл представления {$TemplateName} не существует ";
 
         ob_start();
-        include (Vehela::RootDir."/../static/templates/default/modules/{$this->Module}/{$this->Controller}/{$TemplateName}.tpl");
+        include (Vehela::RootDir."/../static/templates/default/modules/{$this->Router->Module}/{$this->Router->Controller}/{$TemplateName}.tpl");
         $tpl = ob_get_clean();
         return $tpl;
     }

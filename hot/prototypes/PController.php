@@ -3,22 +3,19 @@
 abstract class PController
 {
 
-    protected $View;
     protected $_dbObj;
     protected $Router;
-    protected $Render;
+    public $Render;
 
-    public function __construct($Router, $Render, $View)
+    public function __construct($Router)
     {
         $this->_dbObj = Registry::get('DB');
 
         $this->Router = &$Router;
-        $this->Render = &$Render;
 
         if (method_exists($this, 'beforeInit'))
             $this->beforeInit();
 
-        $this->View = $View;
         $this->Init();
     }
 
@@ -27,12 +24,12 @@ abstract class PController
         if (method_exists($this, 'beforeDestruct'))
             $this->beforeDestruct();
 
-        $this->Render->RenderLayout($this->Render);
+        Registry::get('Render')->CompileLayout();
+        print(Registry::get('Render')->Layout);
     }
 
     public function Init()
     {
-        
     }
 
     public function beforeInit()
@@ -47,7 +44,7 @@ abstract class PController
 
     public function MakeStampInLayout($VariableName, $Value)
     {
-        $this->View->Layout['variables'][$VariableName] = $Value;
+        $this->Render->Layout['variables'][$VariableName] = $Value;
     }
 
     public function CallAction($ActionName){
@@ -55,6 +52,9 @@ abstract class PController
             $this->$ActionName();
     }
 
+    public function RenderPage(){
+
+    }
 }
 
 ?>

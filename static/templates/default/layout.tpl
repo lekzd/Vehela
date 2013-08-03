@@ -31,6 +31,7 @@
                 <li class="active"><a href="/index.php">Главная</a></li>
                 <li><a href="/index.php?module=static&controller=info&action=about">О Vehela</a></li>
                 <li><a href="/index.php?module=static&controller=info&action=team">Команда</a></li>
+                <li><a href="/index.php?module=static&controller=info&action=debug"><?php echo '<#Debug#>'?></a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
