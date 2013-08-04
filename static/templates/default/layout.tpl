@@ -1,3 +1,6 @@
+<?php $Action = Registry::get('Router')->Action;?>
+<?php $Breadcrumbs = Registry::get('Controller')->Breadcrumbs;?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,9 +31,11 @@
         <a class="navbar-brand" href="#"><Vehela></Vehela></a>
         <div class="nav-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/index.php">Главная</a></li>
-                <li><a href="/index.php?module=static&controller=info&action=about">О Vehela</a></li>
-                <li><a href="/index.php?module=static&controller=info&action=team">Команда</a></li>
+
+                <li <?php if($Action=='hello') echo 'class="active"';?>><a href="/index.php">Главная</a></li>
+                <li <?php if($Action=='about') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=about">О Vehela</a></li>
+                <li <?php if($Action=='team') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=team">Команда</a></li>
+                <li <?php if($Action=='debug') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=debug"><?php echo '<#Debug#>'?></a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -38,15 +43,32 @@
 
 <div class="content">
 
-    <div class="PageName">
-        {$PageName}
-    </div>
+
+        <?php
+
+            if(sizeof($Breadcrumbs)>0){
+
+                echo '<ul class="PageName breadcrumb">';
+
+                foreach($Breadcrumbs as $key=> $value){
+                    if(!empty($value['url']))
+                        echo '<li><a href="'.$value['url'].'">'.$value['title'].'</a></li>';
+                    else
+                        echo '<li class="active">'.$value['title'].'</li>';
+                }
+
+                echo '</ul>';
+
+            }
+        ?>
+
+
 
     {$Content}
 </div><!-- /.content -->
 
 <div class="footer">
-    &copy Vehela. Нарисована ребятами из Vehela.team.
+    &copy Vehela. Нарисована ребятами из Vehela.team
 </div>
 
 <script src="/static/js/jquery-1.4.2.min.js"></script>

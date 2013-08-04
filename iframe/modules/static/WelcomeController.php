@@ -10,11 +10,15 @@ class WelcomeController extends PController
 
     public function Hello()
     {
+
+        $this->AddBreadcrumb(
+            'Команда',
+            ''
+        );
+
         $this->MakeStampInLayout('Title', 'Главная');
-        $this->MakeStampInLayout('PageName', 'Главная страница');
 
         $User = Vehela::Model('User');
-
     }
 
 }
