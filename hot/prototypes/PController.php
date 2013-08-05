@@ -5,9 +5,13 @@ abstract class PController
 
     protected $_dbObj;
     protected $Router;
+<<<<<<< HEAD
     public $Objects = array();
     public $Render;
     public $Breadcrumbs = array();
+=======
+    public $Render;
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
 
     public function __construct($Router)
     {
@@ -27,7 +31,10 @@ abstract class PController
             $this->beforeDestruct();
 
         Registry::get('Render')->CompileLayout();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
         print(Registry::get('Render')->Layout);
     }
 
@@ -53,6 +60,7 @@ abstract class PController
             $this->$ActionName();
     }
 
+<<<<<<< HEAD
     public function PutIntoObjects($ItemName,$Item){
         $this->Objects[$ItemName] = $Item;
     }
@@ -77,6 +85,11 @@ abstract class PController
     }
 
 
+=======
+    public function RenderPage(){
+
+    }
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
 }
 
 ?>

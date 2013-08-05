@@ -20,8 +20,13 @@ class Vehela
 
     public function __destruct()
     {
+<<<<<<< HEAD
         if(Registry::get('Router')->Controller != 'api')
             Registry::get('Controller')->TransferGenerationTime($this->EndCalculate());
+=======
+        if(!Registry::get('Router')->Controller == 'api')
+            $this->EndCalculate();
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
     }
 
     private function Init()
@@ -33,7 +38,10 @@ class Vehela
         $this->InitRouterSystem();
         $this->InitController();
         $this->InitRenderingSystem();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
     }
 
     private function LoadSettings()

@@ -31,11 +31,18 @@
         <a class="navbar-brand" href="#"><Vehela></Vehela></a>
         <div class="nav-collapse collapse">
             <ul class="nav navbar-nav">
+<<<<<<< HEAD
 
                 <li <?php if($Action=='hello') echo 'class="active"';?>><a href="/index.php">Главная</a></li>
                 <li <?php if($Action=='about') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=about">О Vehela</a></li>
                 <li <?php if($Action=='team') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=team">Команда</a></li>
                 <li <?php if($Action=='debug') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=debug"><?php echo '<#Debug#>'?></a></li>
+=======
+                <li class="active"><a href="/index.php">Главная</a></li>
+                <li><a href="/index.php?module=static&controller=info&action=about">О Vehela</a></li>
+                <li><a href="/index.php?module=static&controller=info&action=team">Команда</a></li>
+                <li><a href="/index.php?module=static&controller=info&action=debug"><?php echo '<#Debug#>'?></a></li>
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
             </ul>
         </div><!--/.nav-collapse -->
     </div>

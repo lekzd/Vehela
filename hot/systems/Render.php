@@ -20,6 +20,7 @@ class Render
     public function CompileLayout()
     {
 
+<<<<<<< HEAD
         $Render = Registry::get('Controller')->Render;
 
         $this->View = $this->getTplFile($this->Router->Action);
@@ -28,8 +29,19 @@ class Render
 
         if(!empty($Render->Layout['variables']))
             foreach($Render->Layout['variables'] as $VariableName => $Value){
+=======
+        $this->View = $this->getTplFile($this->Router->Action);
+
+        $this->Layout = str_replace('{$Content}', $this->View, $this->getLayout());
+
+
+        if(!empty(Registry::get('Controller')->Render->Layout['variables']))
+            foreach(Registry::get('Controller')->Render->Layout['variables'] as $VariableName => $Value){
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
                 $this->MakeStampInLayout($VariableName,$Value);
             }
+        else
+            echo 'Variables is empty';
 
     }
 
@@ -43,7 +55,15 @@ class Render
 
     public function MakeStampInLayout($VariableName, $Value)
     {
+<<<<<<< HEAD
         Registry::get('Render')->Layout = str_replace('{$' . $VariableName . '}', $Value, Registry::get('Render')->Layout);    }
+=======
+        if(gettype($Value)!='array')
+            Registry::get('Render')->Layout = str_replace('{$' . $VariableName . '}', $Value, Registry::get('Render')->Layout);
+        else
+            Registry::get('Render')->Layout = str_replace('{$' . $VariableName . '}', $Value, Registry::get('Render')->Layout);
+    }
+>>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
 
     public function getLayout()
     {
