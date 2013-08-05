@@ -2,6 +2,5 @@
 /nbproject
 
 # PhpStorm
-.idea
-/.idea
-/idea
+.idea/
+idea/
