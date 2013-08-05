@@ -65,7 +65,7 @@
       <file leaf-file-name="InfoController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iframe/modules/static/InfoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="289" selection-end="383" vertical-scroll-proportion="-11.115385">
+            <state line="17" column="0" selection-start="289" selection-end="383" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,16 +74,25 @@
       <file leaf-file-name="WelcomeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iframe/modules/static/WelcomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="-12.423077">
+            <state line="19" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Render.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Render.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hot/systems/Render.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="8" selection-start="959" selection-end="959" vertical-scroll-proportion="0.2644135">
+            <state line="19" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="5" selection-start="52" selection-end="52" vertical-scroll-proportion="0.18819188">
               <folding />
             </state>
           </provider>
@@ -102,7 +111,6 @@
         <option value="$PROJECT_DIR$/hot/prototypes/PAPIController.php" />
         <option value="$PROJECT_DIR$/hot/modules/main/APIController.php" />
         <option value="$PROJECT_DIR$/static/templates/default/modules/static/welcome/hello.tpl" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/hot/Vehela.php" />
         <option value="$PROJECT_DIR$/static/templates/default/modules/static/debug/classes.tpl" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
@@ -115,6 +123,7 @@
         <option value="$PROJECT_DIR$/iframe/modules/static/InfoController.php" />
         <option value="$PROJECT_DIR$/iframe/modules/static/WelcomeController.php" />
         <option value="$PROJECT_DIR$/hot/systems/Render.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -402,8 +411,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -495,7 +504,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.297235" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30184332" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -574,13 +583,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hot/modules/main/APIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="153" selection-end="186" vertical-scroll-proportion="0.19767442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hot/Vehela.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="87" selection-start="504" selection-end="504" vertical-scroll-proportion="-4.0">
@@ -690,21 +692,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iframe/modules/static/InfoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="289" selection-end="383" vertical-scroll-proportion="-11.115385">
+        <state line="17" column="0" selection-start="289" selection-end="383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iframe/modules/static/WelcomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="-12.423077">
+        <state line="19" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hot/systems/Render.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="8" selection-start="959" selection-end="959" vertical-scroll-proportion="0.2644135">
+        <state line="19" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="52" selection-end="52" vertical-scroll-proportion="0.18819188">
           <folding />
         </state>
       </provider>

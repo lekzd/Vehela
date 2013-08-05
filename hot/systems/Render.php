@@ -17,7 +17,7 @@ class Render
     {
     }
 
-    public function CompileLayout(п)
+    public function CompileLayout()
     {
 
         $Render = Registry::get('Controller')->Render;
