@@ -10,8 +10,6 @@
         public $pass_hash;
         protected $tableName = 'user';
 
-
-
     }
 
 ?>

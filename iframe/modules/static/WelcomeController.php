@@ -3,26 +3,33 @@
 class WelcomeController extends PController
 {
 
-    public function Init()
-    {
-        
-    }
+    public function Init(){}
 
     public function Hello()
     {
 
         $this->AddBreadcrumb(
-            'Команда',
+            'Главная',
             ''
         );
 
         $this->MakeStampInLayout('Title', 'Главная');
-<<<<<<< HEAD
 
-=======
-        $this->MakeStampInLayout('PageName', 'Главная страница');
->>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
-        $User = Vehela::Model('User');
+        $User = Vehela::Model('User')->getById(2);
+        $User2 = Vehela::Model('User')->getById(4);
+
+        $dump_func = $this->dump_func;
+        var_dump($dump_func);
+
+        //$dump_func($User);
+
+        $this->PutIntoObjects($User);
+        $this->PutIntoObjects($User2);
+
+    }
+
+    public function beforeDestruct(){
+        //die();
     }
 
 }

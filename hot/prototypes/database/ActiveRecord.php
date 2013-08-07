@@ -5,6 +5,8 @@
         protected $_dbObj;
         protected $tableName;
 
+        public function __construct(){}
+
         public function save(){
 
             if(!$this->IsItNewRecord()){
@@ -67,19 +69,50 @@
         }
 
         public function deleteById($id){
-            $this->_dbObj->query("DELETE from {$this->tableName} where id = $id");
+            if(Registry::get('QuickPass'))
+                Registry::get('DBQueue')->add(array(
+                    'table'=>$this->tableName,
+                    'function'=>'deleteById',
+                    'query'=>"DELETE FROM {$this->tableName} where id = $id"
+                ));
+            /*
+            $this->_dbObj->query("DELETE from {$this->tableName} where id = $id");*/
         }
 
         public function getById($id){
-            $Record = $this->_dbObj->query("SELECT * FROM {$this->tableName} where id = $id");
-            $Record = $Record->fetch(PDO::FETCH_ASSOC);
-            return $Record;
+
+                if(Registry::get('QuickPass')) {
+                    Registry::get('DBQueue')->add(array(
+                        'table'=>$this->tableName,
+                        'function'=>'getById',
+                        'query'=>"SELECT * FROM {$this->tableName} where id = $id"
+                        ));
+                    return 1;
+                }
+                else {
+                    $DBQueue = Registry::get('DBQueue');
+                    return $DBQueue->results[$this->tableName]['getById'][$id];
+                }
+
         }
 
         public function getAll(){
-            $Records = $this->_dbObj->query("SELECT * FROM {$this->tableName}");
-            $Records = $Records->fetchAll(PDO::FETCH_CLASS);
-            return $Records;
+
+            if(Registry::get('QuickPass'))
+                Registry::get('DBQueue')->add(array(
+                    'table'=>$this->tableName,
+                    'function'=>'getAll',
+                    'query'=>"SELECT * FROM {$this->tableName}"
+                ));
+
+            /*
+             *
+             *
+                $Records = $this->_dbObj->query("SELECT * FROM {$this->tableName}");
+                $Records = $Records->fetchAll(PDO::FETCH_CLASS);
+                return $Records;
+
+            */
         }
 
         private function IsItNewRecord(){

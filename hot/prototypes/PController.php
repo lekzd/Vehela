@@ -5,24 +5,45 @@ abstract class PController
 
     protected $_dbObj;
     protected $Router;
-<<<<<<< HEAD
+    protected $Settings;
+    public $dump_func='_empty';
     public $Objects = array();
     public $Render;
     public $Breadcrumbs = array();
-=======
-    public $Render;
->>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
 
-    public function __construct($Router)
+    public function __construct($settings)
     {
         $this->_dbObj = Registry::get('DB');
+        $this->Settings = &$settings;
 
-        $this->Router = &$Router;
+        $this->Router = Registry::get('Router');
 
         if (method_exists($this, 'beforeInit'))
             $this->beforeInit();
 
         $this->Init();
+
+        $ActionName = $this->Router->Action;
+
+        if (method_exists($this, $ActionName)){
+
+            if(Registry::get('QuickPass')!=true)
+                $this->dump_func="var_dump";
+
+            $this->$ActionName();
+
+        }
+
+        if(Registry::get('QuickPass')==true){
+
+            if(sizeof(Registry::get('DBQueue')->queries)!=0){
+                Registry::add('DB', new PDataBase($this->Settings['DataBase']));
+                Registry::get('DBQueue')->ExecuteRequests();
+                Registry::get('DBQueue')->ClearQueries();
+            }
+
+        }
+
     }
 
     public function __destruct()
@@ -30,25 +51,17 @@ abstract class PController
         if (method_exists($this, 'beforeDestruct'))
             $this->beforeDestruct();
 
-        Registry::get('Render')->CompileLayout();
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
-        print(Registry::get('Render')->Layout);
+        if(!Registry::get('QuickPass')){
+            Registry::get('Render')->CompileLayout();
+            print(Registry::get('Render')->Layout);
+        }
     }
 
-    public function Init()
-    {
-    }
+    public function Init(){}
 
-    public function beforeInit()
-    {
-    }
+    public function beforeInit(){}
 
-    public function beforeDestruct()
-    {
-    }
+    public function beforeDestruct(){}
 
     public function MakeStampInLayout($VariableName, $Value)
     {
@@ -60,9 +73,12 @@ abstract class PController
             $this->$ActionName();
     }
 
-<<<<<<< HEAD
-    public function PutIntoObjects($ItemName,$Item){
-        $this->Objects[$ItemName] = $Item;
+    public function PutIntoObjects($Item){
+        if(!Registry::get('QuickPass')){
+            $this->Objects[] = $Item;
+        }
+
+        //$this->Objects[$Item] = $Item;
     }
 
     public function TransferGenerationTime($time){
@@ -84,12 +100,8 @@ abstract class PController
         return @round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
     }
 
+    public function _empty($args){}
 
-=======
-    public function RenderPage(){
-
-    }
->>>>>>> 6ef0fb57bec5b80d1de07181673c64dc3a74a01a
 }
 
 ?>
