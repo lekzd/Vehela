@@ -13,11 +13,11 @@
 
 <?php
 
-
+print_r(Registry::get('Controller')->Objects);
     if(!empty(Registry::get('Controller')->Objects[0])){
 
         $Objects = Registry::get('Controller')->Objects[0];
-
+		
         foreach($Objects as $key => $name){
             echo "public function <b>{$name}</b>()<br/>{} <br/><hr/>";
         }

@@ -25,8 +25,7 @@ abstract class PController
 
         $ActionName = $this->Router->Action;
 
-        if (method_exists($this, $ActionName)){
-
+        if (method_exists($this, $ActionName)){			
             if(Registry::get('QuickPass')!=true)
                 $this->dump_func="var_dump";
 
@@ -73,10 +72,9 @@ abstract class PController
             $this->$ActionName();
     }
 
-    public function PutIntoObjects($Item){
-
-        if(!Registry::get('QuickPass')){
-            $this->Objects["{$Item}"] = $Item;
+    public function PutIntoObjects(&$Value, $Item='Var'){			
+        if(!Registry::get('QuickPass')){			
+            $this->Objects[$Item] = $Value;
         }
     }
 
@@ -110,6 +108,27 @@ abstract class PController
         $function_name = $this->dump_func;
         self::$function_name($Arg);
     }
+	
+	public function __named($method, array $args = array())
+   {
+     $reflection = new ReflectionMethod($this, $method);
+
+     $pass = array();
+     foreach($reflection->getParameters() as $param)
+     {
+       /* @var $param ReflectionParameter */
+       if(isset($args[$param->getName()]))
+       {
+         $pass[] = $args[$param->getName()];
+       }
+       else
+       {
+         $pass[] = $param->getDefaultValue();
+       }
+     }
+
+     return $reflection->invokeArgs($this, $pass);
+   }   
 
 }
 
