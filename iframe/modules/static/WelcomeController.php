@@ -2,9 +2,8 @@
 
 class WelcomeController extends PController
 {
-
     public function Init(){}
-
+	
     public function Hello()
     {
 
@@ -17,10 +16,9 @@ class WelcomeController extends PController
 
         $User = Vehela::Model('User')->getById(2);
         $User2 = Vehela::Model('User')->getById(4);
-
-        $dump_func = $this->dump_func;
-        var_dump($dump_func);
-
+        
+        //var_dump($User);		
+		$this::{$this->dump_func}($User);
         //$dump_func($User);
 
         $this->PutIntoObjects($User);

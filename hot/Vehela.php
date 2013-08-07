@@ -112,7 +112,7 @@ class Vehela
 
     private function IncludeController()
     {
-        require_once('/../iframe/modules/' . Registry::get('Router')->Module . '/' . Registry::get('Router')->Controller . 'Controller.php');
+        require_once(self::RootDir .'/../iframe/modules/' . Registry::get('Router')->Module . '/' . Registry::get('Router')->Controller . 'Controller.php');
     }
 
     private function CreateControllerObject($settings)

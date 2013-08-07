@@ -101,6 +101,11 @@ abstract class PController
     }
 
     public function _empty($args){}
+	
+	public function var_dump($arg)
+	{
+		var_dump($arg);
+	}
 
 }
 
