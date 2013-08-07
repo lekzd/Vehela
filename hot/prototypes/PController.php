@@ -74,11 +74,11 @@ abstract class PController
     }
 
     public function PutIntoObjects($Item){
+
         if(!Registry::get('QuickPass')){
             $this->Objects[] = $Item;
         }
 
-        //$this->Objects[$Item] = $Item;
     }
 
     public function TransferGenerationTime($time){
@@ -106,6 +106,11 @@ abstract class PController
 	{
 		var_dump($arg);
 	}
+
+    public function dump($Arg){
+        $function_name = $this->dump_func;
+        self::$function_name($Arg);
+    }
 
 }
 

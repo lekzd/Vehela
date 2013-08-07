@@ -18,7 +18,7 @@ class WelcomeController extends PController
         $User2 = Vehela::Model('User')->getById(4);
         
         //var_dump($User);		
-		$this::{$this->dump_func}($User);
+		$this->dump($User);
         //$dump_func($User);
 
         $this->PutIntoObjects($User);
