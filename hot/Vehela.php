@@ -7,10 +7,9 @@ class Vehela
     private $Render;
     private $Router;
     private $DBQueue;
-    private $Controller;
     private $ControllerName;
     private $start_time;
-    private $error;
+    public $error;
     public $QuickPass = true;
     const RootDir = __DIR__;
 
@@ -31,19 +30,11 @@ class Vehela
         $this->LoadSettings();
         $this->LoadCoreClasses();
         $this->LoadErrorHanlder();
+        $this->LoadPlugins();
         $this->InitRouterSystem();
-        Registry::add('QuickPass',$this->QuickPass);
-        $this->InitController($this->_SETTINGS);
-
-        Registry::del('Controller');
-        Registry::del('QuickPass');
-        $this->QuickPass = 0;
-        Registry::add('QuickPass',$this->QuickPass);
-
+        $this->GoQuickPass();
         $this->InitRenderingSystem();
         $this->InitController($this->_SETTINGS);
-
-
     }
 
     private function LoadSettings()
@@ -66,15 +57,7 @@ class Vehela
     }
 
     private function LoadErrorHanlder(){
-        $this->error = new TestErrorHandler;
-        set_error_handler( array( $this->error, 'execute' ) );
-    }
-
-    private function LoadDataBaseClasses()
-    {
-        require_once('prototypes/PDataBase.php');
-        require_once('prototypes/PModel.php');
-        require_once('systems/DBQueue.php');
+        Tools::LoadErrorHanlder($this);
     }
 
     private function InitRouterSystem()
@@ -83,10 +66,31 @@ class Vehela
         Registry::add('Router',new Router());
     }
 
+    private function GoQuickPass(){
+        Registry::add('QuickPass',$this->QuickPass);
+        $this->InitController($this->_SETTINGS);
+        Registry::del('Controller');
+        Registry::del('QuickPass');
+        $this->QuickPass = 0;
+        Registry::add('QuickPass',$this->QuickPass);
+    }
+
+    private function InitRenderingSystem()
+    {
+        require_once('systems/Render.php');
+        Registry::add('Render', new Render());
+    }
+
+    private function LoadPlugins(){
+        foreach($this->_SETTINGS['Plugins'] as $name => $plugin_info){
+            require_once(self::RootDir.'/plugins/'.$plugin_info['path']);
+        }
+    }
+
     private function InitController($settings)
     {
 
-        $this->LoadDataBaseClasses();
+        Tools::LoadDataBaseClasses();
         Registry::add('DBQueue',new DBQueue());
 
         if($this->IsAPIRequest()){
@@ -119,12 +123,6 @@ class Vehela
     {
         $this->ControllerName = Registry::get('Router')->Controller . 'Controller';
         Registry::add('Controller', new $this->ControllerName($settings));
-    }
-
-    private function InitRenderingSystem()
-    {
-        require_once('systems/Render.php');
-        Registry::add('Render', new Render());
     }
 
     private function CheckNeedlessDataBase(){

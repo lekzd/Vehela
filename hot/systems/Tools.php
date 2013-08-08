@@ -51,6 +51,18 @@ class Tools
         return $FileExtension;
     }
 
+    public static function LoadErrorHanlder($Vehela){
+        $Vehela->error = new TestErrorHandler;
+        set_error_handler( array( $Vehela->error, 'execute' ) );
+    }
+
+    public static function LoadDataBaseClasses()
+    {
+        require_once('/../prototypes/PDataBase.php');
+        require_once('/../prototypes/PModel.php');
+        require_once('/../systems/DBQueue.php');
+    }
+
 }
 
 ?>

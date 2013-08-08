@@ -14,14 +14,22 @@ class WelcomeController extends PController
 
         $this->MakeStampInLayout('Title', 'Главная');
 
-        $User = Vehela::Model('User')->getById(2);
-        $User2 = Vehela::Model('User')->getById(40);
-        
-        //var_dump($User);		
-		$this->dump($User);
-        //$dump_func($User);
-        $this->PutIntoObjects($User);
-        $this->PutIntoObjects($User2,'$User2');
+
+        $Bimka = phpFastCache::get("Bimka");
+        phpFastCache::$storage = "auto";
+
+        if($Bimka == null) {
+
+            $Bimka = Vehela::Model('User')->getById(52);
+
+            if(!Registry::get('QuickPass')){
+                phpFastCache::set("Bimka",$Bimka,30);
+            }
+
+        }
+
+        $this->PutIntoObjects($Bimka);
+
     }
 
     public function beforeDestruct(){

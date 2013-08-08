@@ -25,7 +25,7 @@
             if(!empty($_GET['class']))
             {
                 $methods = get_class_methods($_GET['class']);
-                $this->PutIntoObjects('methods', $methods);
+                $this->PutIntoObjects($methods,'methods');
             }
 
             if(Vehela::RequestMethod()=='POST'){

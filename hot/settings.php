@@ -2,11 +2,16 @@
 
 $_SETTINGS = [
     'debug' => 1,
-    'version' => '0.07A',
+    'version' => '0.08A',
     'DataBase' => [
         'dsn' => 'mysql:host=178.32.53.111;dbname=Vilay_Vehela',
         'user' => 'Vilay_VehelaUser',
         'password' => '12345678'
+    ],
+    'Plugins' => [
+        'Cache' => [
+            'path' => 'caching/php_fast_cache.php'
+        ]
     ]
 ];
 
