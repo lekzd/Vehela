@@ -17,6 +17,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/static/css/style.css" rel="stylesheet">
+    <script src="/hot/plugins/ckeditor/ckeditor.js"></script>
 </head>
 
 <body>

@@ -3,15 +3,13 @@
     Class DebugController extends PController {
 
         public function Init(){
-
-        }
-
-        public function Classes(){
-
             $this->AddBreadcrumb(
                 '<#Debug#>',
                 'index.php?module=static&controller=info&action=debug'
             );
+        }
+
+        public function Classes(){
 
             $this->AddBreadcrumb(
                 'Проверка классов',
@@ -34,6 +32,23 @@
 
         }
 
+        public function ckeditor(){
+
+            $this->AddBreadcrumb(
+                'CKEditor',
+                ''
+            );
+
+            if(Vehela::RequestMethod()=='POST')
+            {
+                $editor_data = $_POST['editor1'];
+                var_dump($editor_data);
+                die();
+            }
+
+
+            $this->MakeStampInLayout('Title', 'CKEditor');
+        }
 
 
     }
