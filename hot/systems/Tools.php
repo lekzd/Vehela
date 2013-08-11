@@ -63,6 +63,10 @@ class Tools
         require_once('/../systems/DBQueue.php');
     }
 
+    public static function RegisterPlugin($PluginName){
+        //require_once(Vehela::RootDir.'/plugins/'.$plugin_info['path']);
+    }
+
 }
 
 ?>

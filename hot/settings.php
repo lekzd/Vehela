@@ -9,9 +9,16 @@ $_SETTINGS = [
         'password' => '12345678'
     ],
     'Plugins' => [
-        'Cache' => [
-            'path' => 'caching/php_fast_cache.php'
-        ]
+        'Preload' => [
+            'Cache' => [
+                'path' => 'caching/php_fast_cache.php'
+            ]
+        ],
+        'Other' => [
+            'CKEditor' => [
+                'path' => 'caching/php_fast_cache.php'
+            ]
+        ],
     ]
 ];
 

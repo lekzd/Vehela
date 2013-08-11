@@ -8,5 +8,3 @@
     $User = Registry::get('Controller')->Objects['Var'];
     echo $User['login'];
 ?>!
-
-

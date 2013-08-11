@@ -81,18 +81,18 @@
 
         public function getById($id){
 
-                if(Registry::get('QuickPass')) {
-                    Registry::get('DBQueue')->add(array(
-                        'table'=>$this->tableName,
-                        'function'=>'getById',
-                        'query'=>"SELECT * FROM {$this->tableName} where id = $id"
-                        ));
-                    return 1;
-                }
-                else {
-                    $DBQueue = Registry::get('DBQueue');
-                    return $DBQueue->results[$this->tableName]['getById'][$id];
-                }
+            if(Registry::get('QuickPass')) {
+                Registry::get('DBQueue')->add(array(
+                    'table'=>$this->tableName,
+                    'function'=>'getById',
+                    'query'=>"SELECT * FROM {$this->tableName} where id = $id"
+                ));
+                return 1;
+            }
+            else {
+                $DBQueue = Registry::get('DBQueue');
+                return $DBQueue->results[$this->tableName]['getById'][$id];
+            }
 
         }
 

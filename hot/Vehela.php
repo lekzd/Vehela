@@ -3,7 +3,7 @@
 class Vehela
 {
 
-    private $_SETTINGS;
+    public $_SETTINGS;
     private $Render;
     private $Router;
     private $DBQueue;
@@ -13,7 +13,7 @@ class Vehela
     public $QuickPass = true;
     const RootDir = __DIR__;
 
-    public function __construct()
+    public function Vehela()
     {
         $this->StartCalculate();
         $this->Init();
@@ -27,37 +27,16 @@ class Vehela
 
     private function Init()
     {
-        $this->LoadSettings();
-        $this->LoadCoreClasses();
-        $this->LoadErrorHanlder();
-        $this->LoadPlugins();
+        $this->LaunchStartingSystem();
         $this->InitRouterSystem();
         $this->GoQuickPass();
         $this->InitRenderingSystem();
-        $this->InitController($this->_SETTINGS);
+        $this->InitController();
     }
 
-    private function LoadSettings()
-    {
-        $_SETTINGS = array();
-
-        require_once('settings.php');
-
-        foreach ($_SETTINGS as $key => $value) {
-            $this->_SETTINGS[$key] = $value;
-        }
-    }
-
-    private function LoadCoreClasses()
-    {
-        require_once('systems/Registry.php');
-        require_once('systems/Tools.php');
-        require_once('systems/TestErrorHandler.php');
-        require_once('prototypes/PException.php');
-    }
-
-    private function LoadErrorHanlder(){
-        Tools::LoadErrorHanlder($this);
+    private function LaunchStartingSystem(){
+        require_once('systems/StartingSystem.php');
+        $StartingSystem = new StartingSystem($this);
     }
 
     private function InitRouterSystem()
@@ -81,52 +60,10 @@ class Vehela
         Registry::add('Render', new Render());
     }
 
-    private function LoadPlugins(){
-        foreach($this->_SETTINGS['Plugins'] as $name => $plugin_info){
-            require_once(self::RootDir.'/plugins/'.$plugin_info['path']);
-        }
-    }
-
-    private function InitController($settings)
+    private function InitController()
     {
-
-        Tools::LoadDataBaseClasses();
-        Registry::add('DBQueue',new DBQueue());
-
-        if($this->IsAPIRequest()){
-            require_once('prototypes/PAPIController.php');
-            require_once('modules/main/APIController.php');
-            $this->CreateControllerObject($settings);
-            $ActionName = Registry::get('Router')->Action;
-            if(method_exists(Registry::get('Controller'),$ActionName))
-                Registry::get('Controller')->$ActionName();
-            else
-                throw new PException('Action not found',404);
-        }
-        else{
-
-            require_once('prototypes/PController.php');
-            $this->IncludeController();
-            $this->CreateControllerObject($settings);
-            $this->CheckNeedlessDataBase();
-
-        }
-
-    }
-
-    private function IncludeController()
-    {
-        require_once(self::RootDir .'/../iframe/modules/' . Registry::get('Router')->Module . '/' . Registry::get('Router')->Controller . 'Controller.php');
-    }
-
-    private function CreateControllerObject($settings)
-    {
-        $this->ControllerName = Registry::get('Router')->Controller . 'Controller';
-        Registry::add('Controller', new $this->ControllerName($settings));
-    }
-
-    private function CheckNeedlessDataBase(){
-        $this->IsRequestedStaticModule();
+        require_once('/helpers/prototypes/HController.php');
+        $HController = new HController($this);
     }
 
     private function StartCalculate()
@@ -139,23 +76,6 @@ class Vehela
         $time = microtime(true) - $this->start_time;
         return $time;
    }
-
-    private function IsAPIRequest(){
-
-        if(Registry::get('Router')->Controller == 'api')
-            return 1;
-
-        else
-            return 0;
-
-    }
-
-    private function IsRequestedStaticModule(){
-        if(Registry::get('Router')->Module=='static')
-            return 1;
-        else
-            return 0;
-    }
 
     public static function Model($ModelName)
     {

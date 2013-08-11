@@ -23,7 +23,7 @@ class WelcomeController extends PController
             $Bimka = Vehela::Model('User')->getById(52);
 
             if(!Registry::get('QuickPass')){
-                phpFastCache::set("Bimka",$Bimka,30);
+                phpFastCache::set("Bimka",$Bimka,60);
             }
 
         }
