@@ -11,10 +11,10 @@ abstract class PController
     public $Render;
     public $Breadcrumbs = array();
 
-    public function __construct($settings)
+    public function __construct()
     {
         $this->_dbObj = Registry::get('DB');
-        $this->Settings = &$settings;
+        $this->Settings = Vehela::$_SETTINGS;
 
         $this->Router = Registry::get('Router');
 
