@@ -58,9 +58,9 @@ class Tools
 
     public static function LoadDataBaseClasses()
     {
-        require_once('/../prototypes/PDataBase.php');
-        require_once('/../prototypes/PModel.php');
-        require_once('/../systems/DBQueue.php');
+        require_once(Vehela::RootDir.'/prototypes/PDataBase.php');
+        require_once(Vehela::RootDir.'/prototypes/PModel.php');
+        require_once(Vehela::RootDir.'/systems/DBQueue.php');
     }
 
     public static function RegisterPlugin($PluginName){

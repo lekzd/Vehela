@@ -29,7 +29,7 @@
             }
             else{
 
-                require_once('/../../prototypes/PController.php');
+                require_once(Vehela::RootDir.'/prototypes/PController.php');
                 $this->IncludeController();
                 $this->CreateControllerObject($Vehela->_SETTINGS);
 

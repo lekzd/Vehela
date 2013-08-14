@@ -15,7 +15,6 @@ class Vehela
 
     public function Vehela()
     {
-        $this->StartCalculate();
         $this->Init();
     }
 
@@ -27,11 +26,13 @@ class Vehela
 
     private function Init()
     {
+        $this->StartCalculate();
         $this->LaunchStartingSystem();
         $this->InitRouterSystem();
         $this->GoQuickPass();
         $this->InitRenderingSystem();
         $this->InitController();
+
     }
 
     private function LaunchStartingSystem(){
@@ -62,7 +63,7 @@ class Vehela
 
     private function InitController()
     {
-        require_once('/helpers/prototypes/HController.php');
+        require_once(Vehela::RootDir.'/helpers/prototypes/HController.php');
         $HController = new HController($this);
     }
 
