@@ -1,26 +1,20 @@
 <?php
 
-    require_once(Vehela::RootDir.'/helpers/systems/HStartingSystem.php');
+    class StartingSystem {
 
-
-    Class StartingSystem {
-
-        private $HStartingSystem;
-
-        public function __construct(&$Vehela){
-            $this->HStartingSystem = new HStartingSystem($Vehela);
-            $this->LoadSettings($Vehela);
-            $this->LoadCoreClasses($Vehela);
+        public function __construct(){
+            $this->LoadSettings();
+            $this->LoadCoreClasses();
             $this->LoadErrorHanlder();
-            $this->LoadLocalization($Vehela->_SETTINGS['language']);
-            $this->LoadPlugins($Vehela);
+            $this->LoadLocalization(Vehela::$_SETTINGS['language']);
+            $this->LoadPlugins();
         }
 
         private function LoadSettings()
         {
-            $_SETTINGS = array();
+            $_SETTINGS = [];
             require_once(Vehela::RootDir.'/settings.php');
-            $this->HStartingSystem->HandleSettingsArray($_SETTINGS);
+            Vehela::$_SETTINGS = $_SETTINGS;
         }
 
         private function LoadCoreClasses()
@@ -39,8 +33,8 @@
             
         }
 
-        private function LoadPlugins(&$Vehela){
-            foreach($Vehela->_SETTINGS['Plugins']['Preload'] as $name => $plugin_info){
+        private function LoadPlugins(){
+            foreach(Vehela::$_SETTINGS['Plugins']['Preload'] as $name => $plugin_info){
                 require_once(Vehela::RootDir.'/plugins/'.$plugin_info['path']);
             }
         }

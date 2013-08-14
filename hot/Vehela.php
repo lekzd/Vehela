@@ -3,7 +3,7 @@
 class Vehela
 {
 
-    public $_SETTINGS;
+    public static $_SETTINGS;
     private $Render;
     private $Router;
     private $DBQueue;
@@ -37,7 +37,7 @@ class Vehela
 
     private function LaunchStartingSystem(){
         require_once('systems/StartingSystem.php');
-        $StartingSystem = new StartingSystem($this);
+        new StartingSystem();
     }
 
     private function InitRouterSystem()
@@ -48,7 +48,7 @@ class Vehela
 
     private function GoQuickPass(){
         Registry::add('QuickPass',$this->QuickPass);
-        $this->InitController($this->_SETTINGS);
+        $this->InitController();
         Registry::del('Controller');
         Registry::del('QuickPass');
         $this->QuickPass = 0;
@@ -64,7 +64,7 @@ class Vehela
     private function InitController()
     {
         require_once(Vehela::RootDir.'/helpers/prototypes/HController.php');
-        $HController = new HController($this);
+        new HController();
     }
 
     private function StartCalculate()
