@@ -1,13 +1,18 @@
 <?php
 
-    Class APIController extends PAPIController {
+Class APIController extends PAPIController {
 
-        public function debug(){
-            if(isset($_GET['class']))
-                var_dump(get_class_methods($_GET['class']));
-        }
+    public function userinfo(){
+
+        if(!Registry::get('QuickPass'))
+            if(isset($_GET['id'])){
+                $project = Vehela::Model('User')->getById($_GET['id'],1);
+                print(json_encode($project));
+            }
 
     }
+
+}
 
 
 ?>

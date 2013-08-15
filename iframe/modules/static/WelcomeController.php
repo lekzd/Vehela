@@ -15,20 +15,14 @@ class WelcomeController extends PController
         $this->MakeStampInLayout('Title', 'Главная');
 
 
-        $Bimka = phpFastCache::get("Bimka");
-        phpFastCache::$storage = "auto";
+        $User = Vehela::Model('User')->getById(53,1);
 
-        if($Bimka == null) {
+        $User->pass_salt = 'developer';
+        $User->pass_hash = md5('pass'.$User->pass_salt);
+        $User->save();
+        die();
 
-            $Bimka = Vehela::Model('User')->getById(52);
-
-            if(!Registry::get('QuickPass')){
-                phpFastCache::set("Bimka",$Bimka,60);
-            }
-
-        }
-
-        $this->PutIntoObjects($Bimka);
+        $this->PutIntoObjects($User);
 
     }
 

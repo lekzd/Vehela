@@ -6,5 +6,5 @@
 Добро пожаловать,
 <?php
     $User = Registry::get('Controller')->Objects['Var'];
-    echo $User['login'];
+    echo $User->login;
 ?>!

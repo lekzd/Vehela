@@ -32,7 +32,6 @@
         <a class="navbar-brand" href="#"><Vehela></Vehela></a>
         <div class="nav-collapse collapse">
             <ul class="nav navbar-nav">
-
                 <li <?php if($Action=='hello') echo 'class="active"';?>><a href="/index.php">Главная</a></li>
                 <li <?php if($Action=='about') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=about">О Vehela</a></li>
                 <li <?php if($Action=='team') echo 'class="active"';?>><a href="/index.php?module=static&controller=info&action=team">Команда</a></li>
