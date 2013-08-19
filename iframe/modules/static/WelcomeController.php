@@ -14,15 +14,19 @@ class WelcomeController extends PController
 
         $this->MakeStampInLayout('Title', 'Главная');
 
-
-        $User = Vehela::Model('User')->getById(53,1);
-
-        $User->pass_salt = 'developer';
-        $User->pass_hash = md5('pass'.$User->pass_salt);
-        $User->save();
-        die();
-
         $this->PutIntoObjects($User);
+
+    }
+
+    public function AjaxGettingData(){
+
+        if(Tools::IsAjaxRequest()){
+
+            echo "Data loaded from Ajax";
+
+        }
+
+        die();
 
     }
 

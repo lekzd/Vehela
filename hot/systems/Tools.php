@@ -67,6 +67,14 @@ class Tools
         //require_once(Vehela::RootDir.'/plugins/'.$plugin_info['path']);
     }
 
+    public static function IsAjaxRequest(){
+        if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+            return 1;
+        }
+        else
+            die();
+    }
+
 }
 
 ?>

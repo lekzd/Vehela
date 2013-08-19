@@ -20,6 +20,12 @@ class Vehela
 
     public function __destruct()
     {
+        if(Registry::get('IsAjaxRequest')=='yeap')
+            die();
+
+        if(is_null(Registry::get('Controller')))
+            die();
+
         if(Registry::get('Router')->Controller != 'api')
             Registry::get('Controller')->TransferGenerationTime($this->EndCalculate());
     }
