@@ -7,7 +7,7 @@
             $this->LoadCoreClasses();
             $this->LoadErrorHanlder();
             $this->LoadLocalization(Vehela::$_SETTINGS['language']);
-            $this->LoadPlugins();
+            $this->LoadPlugins();           
         }
 
         private function LoadSettings()

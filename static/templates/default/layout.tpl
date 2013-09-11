@@ -1,6 +1,5 @@
 <?php $Action = Registry::get('Router')->Action;?>
 <?php $Breadcrumbs = Registry::get('Controller')->Breadcrumbs;?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,6 +71,8 @@
 <div class="footer">
     &copy Vehela. Нарисована ребятами из Vehela.team
 </div>
+
+{$RenderDebugInfo}
 
 <script src="/static/js/jquery-1.4.2.min.js"></script>
 <script src="/static/js/bootstrap/bootstrap.min.js"></script>

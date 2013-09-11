@@ -20,7 +20,15 @@ $_SETTINGS = [
                 'path' => 'caching/php_fast_cache.php'
             ]
         ],
-    ]
+    ],
+    'URLRoutes' => [
+        [
+            'match'     => '/about/',
+            'module'    => 'static',
+            'controller'=> 'info',
+            'action'    => 'about'
+        ]
+    ] 
 ];
 
 ?>

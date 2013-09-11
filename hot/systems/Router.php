@@ -16,6 +16,8 @@ Class Router
 
     private function Init()
     {
+        $this->MatchURLRoutes();
+
         $this->ParseRequest();
         $this->RequestMethod();
     }
@@ -78,6 +80,30 @@ Class Router
         $this->Module = 'static';
         $this->Controller = 'welcome';
         $this->Action = 'hello';
+    }
+
+    private function MatchURLRoutes() 
+    {   
+        $settings = Vehela::$_SETTINGS;  
+        $url = $_SERVER['REQUEST_URI'];
+
+        if ( empty($settings['URLRoutes']) ) {
+            return false;
+        }
+
+        $routes_list = $settings['URLRoutes'];
+
+        foreach ($routes_list as $route_item) {
+            if ( $route_item['match'] == $url ) {
+
+                $_GET['module']     = $route_item['module'];
+                $_GET['controller'] = $route_item['controller'];
+                $_GET['action']     = $route_item['action'];
+
+                break;
+            }
+        }
+        
     }
 
 }

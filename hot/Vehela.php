@@ -27,12 +27,13 @@ class Vehela
             die();
 
         if(Registry::get('Router')->Controller != 'api')
-            Registry::get('Controller')->TransferGenerationTime($this->EndCalculate());
+            Registry::add( 'generation_time', Registry::get('Controller')->TransferGenerationTime($this->EndCalculate()) );
+
     }
 
     private function Init()
     {
-        $this->StartCalculate();
+        $this->StartCalculate();        
         $this->LaunchStartingSystem();
         $this->InitRouterSystem();
         $this->GoQuickPass();
@@ -80,9 +81,8 @@ class Vehela
 
     private function EndCalculate()
     {
-        $time = microtime(true) - $this->start_time;
-        return $time;
-   }
+        return microtime(true) - $this->start_time;
+    }
 
     public static function Model($ModelName)
     {

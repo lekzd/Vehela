@@ -8,7 +8,7 @@ class RegisterController extends PController
         require_once('/../../Models/Users.php');
         $Users = new Users($this->DBConnection);
 
-        die();
+        //die();
         $this->MakeStampInLayout('PageName', 'Регистрация');
     }
 

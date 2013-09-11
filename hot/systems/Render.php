@@ -23,8 +23,11 @@ class Render
         $Render = Registry::get('Controller')->Render;
 
         $this->View = $this->getTplFile($this->Router->Action);
+        $this->Render_debug_string = Registry::get('generation_time');
+        $this->Layout = $this->getLayout();
 
-        $this->Layout = str_replace('{$Content}', $this->View, $this->getLayout());
+        $this->MakeStampInLayout( 'Content', $this->View );
+        $this->MakeStampInLayout( 'RenderDebugInfo', $this->Render_debug_string );
 
         if(!empty($Render->Layout['variables']))
             foreach($Render->Layout['variables'] as $VariableName => $Value){
@@ -42,8 +45,10 @@ class Render
     }
 
     public function MakeStampInLayout($VariableName, $Value)
-    {
-        Registry::get('Render')->Layout = str_replace('{$' . $VariableName . '}', $Value, Registry::get('Render')->Layout);    }
+    {   
+        $render = Registry::get('Render');
+        $render->Layout = str_replace('{$' . $VariableName . '}', $Value, $render->Layout);    
+    }
 
     public function getLayout()
     {
@@ -52,7 +57,8 @@ class Render
 
     public function getView($TemplateName)
     {
-        $this->IsRequestForMainPage();
+        //Устарело, больше не используется
+        //$this->IsRequestForMainPage();
         return $this->getTplFile($TemplateName);
     }
 
@@ -60,7 +66,8 @@ class Render
     {
 
         if(!file_exists(Vehela::RootDir."/../static/templates/default/modules/{$this->Router->Module}/{$this->Router->Controller}/{$TemplateName}.tpl"))
-            echo "Файл представления {$TemplateName} не существует ";
+            //echo "Файл представления {$TemplateName} не существует ";
+            throw new PException("Файл представления {$TemplateName} не существует",500);
 
         ob_start();
         include (Vehela::RootDir."/../static/templates/default/modules/{$this->Router->Module}/{$this->Router->Controller}/{$TemplateName}.tpl");
@@ -68,6 +75,8 @@ class Render
         return $tpl;
     }
 
+    /*
+    //Устарело, больше не используется
     private function IsRequestForMainPage()
     {
         if (empty($this->Module))
@@ -79,6 +88,8 @@ class Render
         if (empty($this->Action))
             $this->Action = 'hello';
     }
+
+    */
 }
 
 ?>

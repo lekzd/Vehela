@@ -67,22 +67,25 @@ abstract class PController
         $this->Render->Layout['variables'][$VariableName] = $Value;
     }
 
-    public function CallAction($ActionName){
+    public function CallAction($ActionName) {
         if(method_exists($this,$ActionName))
             $this->$ActionName();
     }
 
-    public function PutIntoObjects(&$Value, $Item='Var'){			
+    public function PutIntoObjects(&$Value, $Item='Var') 
+    {			
         if(!Registry::get('QuickPass')){			
             $this->Objects[$Item] = $Value;
         }
     }
 
-    public function TransferGenerationTime($time){
-        printf("<div class=\"debug_generation_time\">Страница сгенерирована за %f секунд.<br/> Использовано %s</div>", $time, $this->convert(memory_get_usage(true)));
+    public function TransferGenerationTime($time) 
+    {
+        return "<div class='debug_generation_time'>Страница сгенерирована за $time секунд.<br/> Использовано ".$this->convert(memory_get_usage(true))."</div>";
     }
 
-    public function AddBreadcrumb($title, $url){
+    public function AddBreadcrumb($title, $url)
+    {
 
         $this->Breadcrumbs[] = array(
             'title'=>$title,

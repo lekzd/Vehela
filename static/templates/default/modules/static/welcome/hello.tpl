@@ -5,9 +5,15 @@
     </div>
 
 
-
     <button id="submit" type="submit" class="btn btn-success">Проверить Ajax.get!</button>
 
     <div id="msgbox"></div>
 
 <script>$().ready(VehelaAjaxTesting());</script>
+
+<br /><br /><br />
+
+
+<a href="/about/" class="btn btn-success">Проверить ЧПУ</a>
+
+

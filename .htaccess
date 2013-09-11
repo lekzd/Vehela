@@ -1,3 +1,9 @@
 AddDefaultCharset utf-8
 
+RewriteEngine On 
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^(.+)\.(\w{2,4})$
+RewriteRule ^(.*)/ index.php [L,QSA]
+
 
